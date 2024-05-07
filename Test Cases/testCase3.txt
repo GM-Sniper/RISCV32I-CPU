@@ -1,0 +1,15 @@
+addi a0, x0, 32 
+addi a1, x0, 5 
+max:
+addi t0, zero, 0
+lw t1, 0(a0)
+ForLoop:
+slli t2, t0, 2
+add t2, t2, a0
+lw t2, 0(t2)
+bge t1, t2, cont
+addi t1, t2, 0
+cont:
+addi t0, t0, 1
+blt t0, a1, ForLoop
+addi x1, t1, 0
