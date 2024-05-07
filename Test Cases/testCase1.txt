@@ -4,5 +4,5 @@ AND t0, s0, s1
 OR t1, s0, s1
 XOR t2, s0, s1
 andi t3, s0, 1500
-ori t4, s1, 2800
+ori t4, s1, 500
 xori t5, s0, 386
