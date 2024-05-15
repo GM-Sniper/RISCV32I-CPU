@@ -26,7 +26,7 @@ module ControlUnit (
     output [6:0] detect, // 7-bit output anodes
     output [3:0] anode
     );
-wire test=1'b0;
+reg test=1'b0;
 always @(*) begin
     case(opcode[6:2])   
         5'b01100: begin //R-type
@@ -74,7 +74,6 @@ always @(*) begin
             Branch <= 0;
             Jump <= 2'b00;
             ALUSrc <= 1;
-            RegDst <= 2'b10;
             LUI <= 1;
             AUIPC <= 0;
         end
@@ -142,6 +141,7 @@ always @(*) begin
             test<=1;
         end
 endcase
-assign detect=(test) ? 7'b0110000 : 7'b1111111; 
 end
+assign detect=test ? 7'b0110000 : 7'b1111111; 
+assign anode=4'b0111;
 endmodule
