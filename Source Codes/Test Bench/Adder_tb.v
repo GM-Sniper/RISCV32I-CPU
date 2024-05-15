@@ -10,7 +10,7 @@
 * 		   
 *				 	   
 ************************/
-module Adder_tb;
+module Adder_tb();
 
     // Signals
     reg [31:0] in1, in2;
