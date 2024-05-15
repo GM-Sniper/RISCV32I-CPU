@@ -1,22 +1,10 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 05/15/2024 02:49:56 PM
-// Design Name: 
-// Module Name: ROM
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+//* Module: ROM.v
+//* Project: RISCV_CPU
+//* Author: Omar Ahmed Ganna,  omarganna@aucegypt.edu
+//* Description: Built the ROM (program data) which is used to store instructions
+//* Change history: 15/05/24:  Created the Program data
 //////////////////////////////////////////////////////////////////////////////////
 
 module program_ROM #(parameter width = 8,
@@ -26,9 +14,8 @@ parameter address_width = $clog2(depth))
 (
 input wire clk,
 input wire [address_width-1:0] address,
-output reg [width-1:0] data
+output reg [31:0] data
 ); 
-
 reg [width-1:0] memory [0:depth-1];
 
 
@@ -37,8 +24,7 @@ initial begin
         $readmemh(filename, memory);
     end
 end
-
 always @(posedge clk) begin
-    data <= memory[address];
+    data<={memory[address+3],memory[address+2],memory[address+1],memory[address]};
 end
 endmodule
