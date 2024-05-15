@@ -1,0 +1,24 @@
+`timescale 1ns / 1ps
+/***********************
+*
+* Module: Adder_4.v
+* Project: RISCV_CPU
+* Author: Mohamed Abdelfatah Khaled, mohamedabdelfatah572@aucegypt.edu
+* Description: This module is the Adder_4, which is responsible for  
+* adding 4 to the input 
+* Change history: 15/05/24: create the Adder_4 module  
+* 		   
+*
+************************/
+
+
+
+module Adder4(
+    input [31:0] in,    
+    output [31:0] out   
+);
+
+    // Add 4 to the input 
+    assign out = in + 4;
+
+endmodule
