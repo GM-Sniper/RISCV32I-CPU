@@ -1,13 +1,13 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
--------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Wed May 15 16:12:48 2024
+| Date         : Wed May 15 19:12:20 2024
 | Host         : DESKTOP-GQIIC2L running 64-bit major release  (build 9200)
-| Command      : report_utilization -file ALU_utilization_synth.rpt -pb ALU_utilization_synth.pb
-| Design       : ALU
+| Command      : report_utilization -file ControlUnit_utilization_synth.rpt -pb ControlUnit_utilization_synth.pb
+| Design       : ControlUnit
 | Device       : 7a35tcpg236-1
 | Design State : Synthesized
--------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
 
 Utilization Design Information
 
@@ -30,13 +30,13 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  427 |     0 |     20800 |  2.05 |
-|   LUT as Logic          |  427 |     0 |     20800 |  2.05 |
+| Slice LUTs*             |    5 |     0 |     20800 |  0.02 |
+|   LUT as Logic          |    5 |     0 |     20800 |  0.02 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
-| Slice Registers         |    2 |     0 |     41600 | <0.01 |
+| Slice Registers         |    8 |     0 |     41600 |  0.02 |
 |   Register as Flip Flop |    0 |     0 |     41600 |  0.00 |
-|   Register as Latch     |    2 |     0 |     41600 | <0.01 |
-| F7 Muxes                |   32 |     0 |     16300 |  0.20 |
+|   Register as Latch     |    8 |     0 |     41600 |  0.02 |
+| F7 Muxes                |    0 |     0 |     16300 |  0.00 |
 | F8 Muxes                |    0 |     0 |      8150 |  0.00 |
 +-------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -55,7 +55,7 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
-| 2     |          Yes |           - |        Reset |
+| 8     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
 | 0     |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
@@ -90,7 +90,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |  104 |     0 |       106 | 98.11 |
+| Bonded IOB                  |   30 |     0 |       106 | 28.30 |
 | Bonded IPADs                |    0 |     0 |        10 |  0.00 |
 | Bonded OPADs                |    0 |     0 |         4 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         5 |  0.00 |
@@ -149,16 +149,14 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT4     |  247 |                 LUT |
-| LUT6     |  130 |                 LUT |
-| LUT5     |   86 |                 LUT |
-| IBUF     |   68 |                  IO |
-| LUT2     |   65 |                 LUT |
-| LUT3     |   38 |                 LUT |
-| OBUF     |   36 |                  IO |
-| MUXF7    |   32 |               MuxFx |
-| CARRY4   |   32 |          CarryLogic |
-| LDCE     |    2 |        Flop & Latch |
+| OBUF     |   21 |                  IO |
+| LDCE     |    8 |        Flop & Latch |
+| IBUF     |    5 |                  IO |
+| OBUFT    |    4 |                  IO |
+| LUT3     |    4 |                 LUT |
+| LUT5     |    2 |                 LUT |
+| LUT2     |    2 |                 LUT |
+| LUT1     |    1 |                 LUT |
 +----------+------+---------------------+
 
 

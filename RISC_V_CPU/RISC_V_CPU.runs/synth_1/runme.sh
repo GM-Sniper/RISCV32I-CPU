@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Omar Ganna/RISC_V_CPU/RISC_V_CPU.runs/synth_1'
+HD_PWD='C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log ALU.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ALU.tcl
+EAStep vivado -log ControlUnit.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ControlUnit.tcl

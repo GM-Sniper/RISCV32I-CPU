@@ -30,7 +30,7 @@ reg test=1'b0;
 always @(*) begin
     case(opcode[6:2])   
         5'b01100: begin //R-type
-            // ALUControl = 4'b0111;
+//             ALUControl = 4'b0111;
             RegWrite <= 1;
             MemtoReg <= 0;
             MemWrite <= 0;
@@ -41,8 +41,8 @@ always @(*) begin
             LUI <= 0;
             AUIPC <= 0;
         end
-        5'b00100: begin //I-type
-            // ALUControl = 4'b0111;
+        5'b00100: begin//I-type
+//             ALUControl = 4'b0111;
             RegWrite <= 1;
             MemtoReg <= 0;
             MemWrite <= 0;
@@ -54,7 +54,7 @@ always @(*) begin
             AUIPC <= 0;
         end
         5'b11000: begin //SB-type
-            // ALUControl = 4'b0111;
+//             ALUControl = 4'b0111;
             RegWrite <= 1;
             MemtoReg <= 0;
             MemWrite <= 0;
@@ -66,7 +66,7 @@ always @(*) begin
             AUIPC <= 0;
         end
         5'b00000: begin //U-type
-            // ALUControl = 4'b0111;
+//             ALUControl = 4'b0111;
             RegWrite <= 1;
             MemtoReg <= 0;
             MemWrite <= 0;
@@ -78,7 +78,7 @@ always @(*) begin
             AUIPC <= 0;
         end
         5'b01000: begin //S-type
-            // ALUControl = 4'b0000;
+//             ALUControl = 4'b0000;
             RegWrite <= 1;
             MemtoReg <= 0;
             MemWrite <= 1;
@@ -90,7 +90,7 @@ always @(*) begin
             AUIPC <= 0;
         end
         5'b01101: begin 
-            // ALUControl = 4'b0111;
+//             ALUControl = 4'b0111;
             RegWrite <= 1;
             MemtoReg <= 0;
             MemWrite <= 0;
@@ -102,7 +102,7 @@ always @(*) begin
             AUIPC <= 0;
         end
         5'b00101: begin 
-            // ALUCon<trol = 4'b0111;
+//             ALUControl = 4'b0111;
             RegWrite <= 1;
             MemtoReg <= 0;
             MemWrite <= 0;
@@ -113,8 +113,8 @@ always @(*) begin
             LUI <= 0;
             AUIPC <= 1;
         end
-        5'b11011: begin 
-            // ALUControl = 4'b0111;
+        5'b11011: begin //Jal
+//             ALUControl = 4'b0111;
             RegWrite <= 1;
             MemtoReg <= 0;
             MemWrite <= 0;
@@ -125,8 +125,8 @@ always @(*) begin
             LUI <= 0;
             AUIPC <= 0;
         end
-        5'b11001: begin 
-            // ALUControl = 4'b0111;
+        5'b11001: begin //jalr
+//             ALUControl = 4'b0111;
             RegWrite <= 1;
             MemtoReg <= 0;
             MemWrite <= 0;
