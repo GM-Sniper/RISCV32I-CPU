@@ -1,15 +1,14 @@
 `timescale 1ns / 1ps
 /***********************
+* Module: ALU.v
+* Project: RISCV_CPU
+* Author: Mohamed Abdelfatah Khaled, mohamedabdelfatah572@aucegypt.edu
+* Description: This module is the ALU, which is responsible for performing arithmetic and logical
+  operations. It outputs the Zflag, Nflag, Oflag, and Cflag.
 *
-* Module: module_name.v
-* Project: Project_Name
-* Author: name and email
-* Description: put your description here
-*
-* Change history: 01/01/17 ? Did something
-* 10/29/17 ? Did something else
-*
-************************/
+* Change history: 12/05/24: created the first version of the ALU, but still need modifications  
+*  15/05/24: update the descripiton of the module
+*************************/
 module ALU (
     input [31:0] A, B,
     input [3:0] ALUControl,  // {instruction[30],instruction[14:12]}
