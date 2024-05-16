@@ -13,7 +13,7 @@
 
 module ControlUnit (
     input [6:0] opcode,
-    output reg [3:0] ALUControl,
+//    output reg [3:0] ALUControl,
     output reg RegWrite,//
     output reg MemtoReg,//
     output reg MemWrite,//
@@ -26,7 +26,10 @@ module ControlUnit (
     output [6:0] detect, // 7-bit output anodes
     output [3:0] anode
     );
-reg test=1'b0;
+reg test;
+initial begin
+$display("Value of opcode ", opcode);
+end
 always @(*) begin
     case(opcode[6:2])   
         5'b01100: begin //R-type
@@ -138,7 +141,7 @@ always @(*) begin
             AUIPC <= 0;
         end
         default: begin
-            test<=1;
+            test=1;
         end
 endcase
 end

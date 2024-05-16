@@ -1,110 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1715789506">
-  <File Type="BITSTR-BMM" Name="ControlUnit_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="ControlUnit_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="ControlUnit_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR" Name="ControlUnit_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="ControlUnit.tcl"/>
-  <File Type="OPT-TIMING" Name="ControlUnit_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="ControlUnit_opt.dcp"/>
-  <File Type="ROUTE-PWR-SUM" Name="ControlUnit_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="ControlUnit_reports.tcl"/>
-  <File Type="OPT-DRC" Name="ControlUnit_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="ControlUnit.hwdef"/>
-  <File Type="PWROPT-DCP" Name="ControlUnit_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="ControlUnit_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="ControlUnit_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="ControlUnit_placed.dcp"/>
-  <File Type="PLACE-IO" Name="ControlUnit_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="ControlUnit_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="ControlUnit_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="ControlUnit_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="ControlUnit_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="ControlUnit_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="ControlUnit_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BGN" Name="ControlUnit.bgn"/>
-  <File Type="PLACE-TIMING" Name="ControlUnit_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="ControlUnit_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="ControlUnit.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="ControlUnit_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="ControlUnit_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="ControlUnit_drc_physopted.rpt"/>
-  <File Type="BITSTR-MSK" Name="ControlUnit.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="ControlUnit_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="ControlUnit_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="ControlUnit_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="ControlUnit_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="ControlUnit_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="ControlUnit_drc_routed.pb"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1715886172">
+  <File Type="OPT-HWDEF" Name="CPU.hwdef"/>
+  <File Type="ROUTE-BUS-SKEW" Name="CPU_bus_skew_routed.rpt"/>
+  <File Type="PA-DCP" Name="CPU.dcp"/>
+  <File Type="BITSTR-BMM" Name="CPU_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="CPU_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="CPU_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="CPU_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="CPU.tcl"/>
+  <File Type="OPT-TIMING" Name="CPU_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="CPU_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="CPU_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="CPU_reports.tcl"/>
+  <File Type="OPT-DRC" Name="CPU_drc_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="CPU_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="CPU_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="CPU_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="CPU_placed.dcp"/>
+  <File Type="PLACE-IO" Name="CPU_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="CPU_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="CPU_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="CPU_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="CPU_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="CPU_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="CPU_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="CPU_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="CPU_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="CPU.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="CPU_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="CPU_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="CPU_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="CPU.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="CPU_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="CPU_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="CPU_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="CPU_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="CPU_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="CPU_drc_routed.pb"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="ControlUnit.ltx"/>
-  <File Type="ROUTE-DRC-RPX" Name="ControlUnit_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="ControlUnit.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="ControlUnit_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="ControlUnit_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="ControlUnit.sysdef"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ControlUnit_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="ControlUnit_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="ControlUnit_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="ControlUnit_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="ControlUnit_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="ControlUnit_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="ControlUnit_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="ControlUnit_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="ControlUnit_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="ControlUnit_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="ControlUnit_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="ControlUnit_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="ControlUnit_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="ControlUnit_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="ControlUnit_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="ControlUnit_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="ControlUnit_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="ControlUnit_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="ControlUnit_bus_skew_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="ControlUnit.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="ControlUnit_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-RBT" Name="ControlUnit.rbt"/>
-  <File Type="BITSTR-NKY" Name="ControlUnit.nky"/>
-  <File Type="BG-DRC" Name="ControlUnit.drc"/>
-  <File Type="RDI-RDI" Name="ControlUnit.vdi"/>
+  <File Type="BITSTR-LTX" Name="CPU.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="CPU_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="CPU.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="CPU_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="CPU_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="CPU.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="CPU_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="CPU_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="CPU_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="CPU_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="CPU_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="CPU_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="CPU_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="CPU_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="CPU_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="CPU_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="CPU_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="CPU_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="CPU_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="CPU_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="CPU_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="CPU_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="CPU_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="CPU_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="CPU.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="CPU_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="CPU.rbt"/>
+  <File Type="BITSTR-NKY" Name="CPU.nky"/>
+  <File Type="BG-BGN" Name="CPU.bgn"/>
+  <File Type="BG-DRC" Name="CPU.drc"/>
+  <File Type="RDI-RDI" Name="CPU.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/control_Unit.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/ALU.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/ROM.v">
+    <File Path="$PSRCDIR/sources_1/new/Adder.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/registerFile.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/ImmGen.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -112,13 +88,68 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/Branch_Control.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/Adder.v">
+    <File Path="$PSRCDIR/sources_1/new/ImmGen.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ROM.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Sev_segment_display.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clk_div.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/control_Unit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/registerFile.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/shifter.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CPU.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/tocounter.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -134,7 +165,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/tocounter.v">
+    <File Path="$PSRCDIR/sources_1/new/todata.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -142,7 +173,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/todata.v">
+    <File Path="$PSRCDIR/sources_1/new/data_display.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -152,19 +183,18 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="ControlUnit"/>
+      <Option Name="TopModule" Val="CPU"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PSRCDIR/constrs_1/new/const.xdc">
+    <File Path="$PSRCDIR/constrs_1/new/CPU.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
     <Config>
-      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/const.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>

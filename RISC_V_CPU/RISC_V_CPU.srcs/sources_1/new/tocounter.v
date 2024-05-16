@@ -22,8 +22,8 @@
 
 module tocounter(input [1:0] sel,
 input [11:0] in0,
-input [31:0] in1,
-input [31:0] in2,
+input [11:0] in1,
+input [11:0] in2,
 output reg [11:0] PC);
 
 

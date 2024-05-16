@@ -20,9 +20,9 @@ module memory_data # (parameter WIDTH=8,
     parameter ADDRW=$clog2(DEPTH))
     (
     input wire  clk,                      
-    input wire  write_data,               
-    input wire  [ADDRW-1:0] addr_write,    
-    input wire [ADDRW-1:0] addr_read,     
+    input wire  write_data, 
+    input wire read_data,              
+    input wire  [ADDRW-1:0] addr,         
     input wire  [WIDTH-1:0] data_in,       
     output   reg  [WIDTH-1:0] data_out       
     );
@@ -36,14 +36,10 @@ reg [WIDTH-1:0] memory [0:DEPTH-1];
         end
     end
 
-    always @(posedge clk) begin
-        if (write_data) begin
-            memory[addr_write] <= data_in;
-        end
-    end
-
-     always @(posedge clk) begin
-        data_out <= memory[addr_read];
-    end
-
+always @(posedge clk) begin
+        if (write_data) 
+            memory[addr] <= data_in;
+         else if(read_data)
+            data_out<=memory[addr];
+end
 endmodule

@@ -11,6 +11,7 @@
 *************************/
 module ALU (
     input [31:0] A, B,
+    input ALUop,
     input [3:0] ALUControl,  // {instruction[30],instruction[14:12]}
     output reg [31:0] Result,
     output  ZFlag,  NFlag, reg CFlag, reg OFlag
@@ -31,6 +32,7 @@ assign ZFlag = (Result == 32'b0);
 assign NFlag = (Result[31] == 1); 
 
 always @ (*) begin
+if(ALUop) begin
     case (ALUControl)
         ADD: begin
             Result = A + B; 
@@ -52,7 +54,8 @@ always @ (*) begin
         SLTU: Result = (A < B) ? 1 : 0;//manage unsigned 
         default: Result = 32'b0; 
     endcase
+ end
+else Result = A + B;
 end
-
 endmodule
 

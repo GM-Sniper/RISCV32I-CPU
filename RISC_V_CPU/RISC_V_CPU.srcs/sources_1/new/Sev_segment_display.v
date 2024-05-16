@@ -34,7 +34,6 @@ case(num)
     7 : seg = 7'b0001111;
     8 : seg = 7'b0000000;
     9 : seg = 7'b0000100;
-    
     default : seg = 7'b1111111; 
 
 endcase

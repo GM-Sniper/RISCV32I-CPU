@@ -31,18 +31,18 @@ always @ (*) begin
     // Check if branching is required based on B_control and flags
     case (B_control)
         BEQ: 
-            BranchTaken = Branch && Zflag;
+            BranchTaken = Branch & Zflag;
         
         BNE: 
-            BranchTaken = Branch && !Zflag;
+            BranchTaken = Branch & !Zflag;
         BLT: 
-            BranchTaken = Branch && (Nflag != Oflag);
+            BranchTaken = Branch & (Nflag != Oflag);
         BGE:                                                                                    
-            BranchTaken = Branch && (Nflag==Oflag);
+            BranchTaken = Branch & (Nflag==Oflag);
         BLTU: 
-            BranchTaken = Branch && !Cflag;
+            BranchTaken = Branch & !Cflag;
         BGEU: 
-            BranchTaken = Branch && (Cflag);
+            BranchTaken = Branch & (Cflag);
         default: 
             BranchTaken = 0;
     endcase

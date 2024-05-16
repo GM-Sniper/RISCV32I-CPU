@@ -13,14 +13,14 @@
 ************************/
 
 module Adder(
-    input [31:0] in1,
-    input [31:0] in2,
+    input [11:0] in1,
+    input [11:0] in2,
     input sel,    
-    output [31:0] out   
+    output [11:0] out   
 );
 
     // Define 4 as a constant
-    localparam [31:0] FOUR = 32'd4;
+    localparam [11:0] FOUR = 11'd4;
 
     // If sel is 1, add FOUR to in1; otherwise, add in1 and in2
     assign out = sel ? (in1 + FOUR) : (in1 + in2);	 
