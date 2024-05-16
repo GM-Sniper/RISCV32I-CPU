@@ -28,8 +28,8 @@ module CPU(
     );
     wire clk_out;
     wire clk_200;
-    clk_div #(250000) clo(.clk(clk),.rst(rst),.out_clk(clk_200));
-    clk_div #(1000000) cl(.clk(clk),.rst(rst),.out_clk(clk_out));
+//    clk_div #(250000) clo(.clk(clk),.rst(rst),.out_clk(clk_200));
+//    clk_div #(1000000) cl(.clk(clk),.rst(rst),.out_clk(clk_out));
     reg [11:0] programCounter;
     wire [11:0] programOutput;
     wire [31:0] instructions;
@@ -46,11 +46,10 @@ module CPU(
     wire AUIPC; 
     wire ZFlag,NFlag,CFlag, OFlag;
     wire ALUresult;
-    parameter lol="assembl.txt";
 
 //    tocounter pc(2'b00,programCounter,32'd0,32'd0,programOutput);
     
-    program_ROM test(.clk(clk_out),.address(programOutput),.data(instructions));
+    program_ROM test(.clk(clk),.address(12'd0),.data(instructions));
     initial begin
         $display("hellllllllllllljdkflsjdfkls ",instructions);
     end    

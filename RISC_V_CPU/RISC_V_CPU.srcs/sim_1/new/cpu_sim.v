@@ -20,7 +20,15 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module cpu_sim(
+module cpu_sim();
+reg clk;
+reg rst;
+wire [6:0] segments;
+wire [3:0] anodes;
 
-    );
+CPU cp(.clk(clk),.rst(rst),.segments(segments),.anode(anodes));
+initial begin
+clk=0;
+forever #25 clk=~clk;
+end
 endmodule

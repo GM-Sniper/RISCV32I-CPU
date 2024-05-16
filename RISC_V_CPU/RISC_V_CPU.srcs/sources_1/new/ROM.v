@@ -18,16 +18,23 @@ output reg [31:0] data
 ); 
 reg [width-1:0] memory [0:depth-1];
 
-
 initial begin
-    if(filename!=0) begin
-        $readmemh("assembly.txt", memory);
-        $display("name of file", filename);
-        $display("Value of 8 bits" ,memory[address]);
+    if (filename != 0) begin
+        $readmemb("C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/assembly.txt", memory);
+        $display("Value of 1-8 bits", memory[address]);
+        $display("Value of 1-8 bits", memory[address+1]);
+        $display("Value of 1-8 bits", memory[address+2]);
+        $display("Value of 1-8 bits", memory[address+3]);
+        $display("sfnsm,dnfkmsdn,mfnmdsnfwkdbc ", {memory[address+3],memory[address+2],memory[address+1],memory[address]});
+        data={memory[address+3],memory[address+2],memory[address+1],memory[address]};
+        $display("jfhdksjdlkf  ", data);
     end
 end
-always @(posedge clk) begin
-   // data<={memory[address+3],memory[address+2],memory[address+1],memory[address]};
-   data<=32'b00000000011100000000000110010011;
-end
+
+//assign data2=memory[address];
+//always @(*) begin 
+////    data<={memory[address+3],memory[address+2],memory[address+1],memory[address]};
+////   data<=32'b00000000011100000000000110010011;
+        
+//end
 endmodule

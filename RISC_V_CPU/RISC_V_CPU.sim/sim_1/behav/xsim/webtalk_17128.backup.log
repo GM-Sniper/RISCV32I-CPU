@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu May 16 23:17:03 2024
+# Process ID: 17128
+# Current directory: C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.sim/sim_1/behav/xsim/xsim.dir/testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Omar -notrace
+invalid command name "[4FB0:53C0][2023-01-06T23:06:27]i001:"
+    while executing
+"[4FB0:53C0][2023-01-06T23:06:27]i001: Burn v3.10.4.4718, Windows v10.0 (Build 19044: Service Pack 0), path: C:\Windows\Temp\{40AA1940-B3FC-4E89-BC32-3..."
+    (file "C:/Users/Omar" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Thu May 16 23:17:03 2024...
