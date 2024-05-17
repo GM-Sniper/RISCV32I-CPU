@@ -39,7 +39,7 @@ always @(*) begin
             Branch <= 0;
             Jump <= 2'b00;
             ALUSrc <= 0;
-            LUI <= 0;
+            LUI <= 0;   
             AUIPC <= 0;
         end
         5'b00100: begin//I-type

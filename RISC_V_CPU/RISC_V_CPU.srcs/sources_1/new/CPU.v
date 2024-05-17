@@ -21,17 +21,19 @@
 
 
 module CPU(
-    input  clk,
+    input  clk, 
     input rst,
     output [6:0] segments,
-    output [3:0] anode
+    output [3:0] anode,
+    output [31:0] data,
+    output reg [11:0] programCounter 
     );
 
     wire clk_out;
     wire clk_200;
     clk_div #(250000) clo(.clk(clk),.rst(rst),.out_clk(clk_200));
     clk_div #(100000000) cl(.clk(clk),.rst(rst),.out_clk(clk_out));
-   reg [11:0] programCounter;
+//   reg [11:0] programCounter;
 //    wire [11:0] programOutput;
     wire [31:0] instructions;
     wire [31:0] A_data;
@@ -44,24 +46,24 @@ module CPU(
     wire [1:0] Jump;//
     wire  ALUSrc;
     wire LUI;
-    wire AUIPC; 
+    wire AUIPC;  
     wire ZFlag,NFlag,CFlag, OFlag; 
     wire ALUresult;   
     wire test; 
-  wire [31:0] data;
+//  wire [31:0] data;
     initial begin
-        programCounter=12'b000000000000; 
-    end 
-    program_ROM testt(.clk(clk_out),.address(programCounter),.data(instructions));//////////////////////////////////////////////////
+        programCounter=12'b000000000000;  
+    end  
+    program_ROM testt(.clk(clk),.address(programCounter),.data(instructions));//////////////////////////////////////////////////
     ControlUnit cu(.opcode(instructions[6:0]),.RegWrite(RegWrite),.MemtoReg(MemtoReg),.MemWrite(MemWrite),
     .MemRead(MemRead),.Branch(Branch),.Jump(Jump),.ALUSrc(ALUSrc),.AUIPC(AUIPC),.LUI(LUI),.test(test));
     
-    registerFile rgf(.clk(clk_out),.rst(rst),.Rs1_data(A_data),.Rs2_data(B_data),.Write_Rd_data(data),.Rs1_addr(instructions[19:15]),.Rs2_addr(instructions[24:20]),.Rd_addr(instructions[11:7]),.writeControl(RegWrite));
+    registerFile rgf(.clk(clk),.rst(rst),.Rs1_data(A_data),.Rs2_data(B_data),.Write_Rd_data(data),.Rs1_addr(instructions[19:15]),.Rs2_addr(instructions[24:20]),.Rd_addr(instructions[11:7]),.writeControl(RegWrite));
     wire [31:0]in1,in2;
     wire  [11:0] immgenout;
     ImmGen imgen(.instructions(instructions),.immediate(immgenout));
     
-    assign in1 = (AUIPC) ? programCounter : A_data;
+    assign in1 = (AUIPC) ? programCounter : A_data; 
     assign in2 = (ALUSrc)? immgenout : B_data;
     
     ALU al(.A(in1),.B(in2),.ALUop(ALUSrc),.ALUControl({instructions[30],instructions[14:12]}),.Result(data),.ZFlag(ZFlag),.NFlag(NFlag),.CFlag(CFlag),.OFlag(OFlag));   
@@ -92,7 +94,7 @@ end
 // Adder ad(.in1(programCounter),.in2(shifted),.sel(branching),.out(addedPC));
  wire [1:0] sel2={(Jump[0]|Jump[1]),LUI};
  
- always @(posedge clk_out) begin///////////////////////////////////
+ always @(posedge clk) begin///////////////////////////////////
     case(sel2) 
         2'b00: programCounter<=programCounter+4;
         2'b01: programCounter<=shifted;

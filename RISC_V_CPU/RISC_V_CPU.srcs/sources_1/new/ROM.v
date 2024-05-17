@@ -25,7 +25,7 @@ initial begin
     end   
 end
 
-always @(memory) begin 
+always @(posedge clk) begin 
 data[7:0]=memory[address];
 data[15:8]=memory[address+1];
 data[23:16]=memory[address+2];

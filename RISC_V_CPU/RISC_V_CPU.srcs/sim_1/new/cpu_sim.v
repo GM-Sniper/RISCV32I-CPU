@@ -33,4 +33,8 @@ initial begin
 clk=0;
 forever #25 clk=~clk;
 end
+initial begin 
+ rst=0;
+
+end
 endmodule

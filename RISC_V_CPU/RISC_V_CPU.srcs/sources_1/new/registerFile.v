@@ -28,11 +28,17 @@ assign Rs2_data = Registers[Rs2_addr];
 // Writing to a register
 always @ (posedge clk, posedge rst) begin
 Registers[0] = 32'd0;
-if(!rst)
- if(writeControl)
+if(rst == 0)begin
+ if(writeControl)begin
     if(Rd_addr!=5'd0)
         Registers[Rd_addr] <= Write_Rd_data;
     else
         $display("Cannot write x0 register");
+  end
+  else 
+    $display("not enabled");
+  end
+  else 
+$display("reset");
 end
 endmodule
