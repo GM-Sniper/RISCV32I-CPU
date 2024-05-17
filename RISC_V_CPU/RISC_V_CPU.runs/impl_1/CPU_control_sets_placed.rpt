@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Fri May 17 09:40:58 2024
+| Date         : Fri May 17 19:39:06 2024
 | Host         : DESKTOP-GQIIC2L running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file CPU_control_sets_placed.rpt
 | Design       : CPU
@@ -36,8 +36,7 @@ Table of Contents
 +--------+--------------+
 |      2 |           32 |
 |      4 |            2 |
-|      8 |            1 |
-|    16+ |           65 |
+|    16+ |           66 |
 +--------+--------------+
 
 
@@ -47,11 +46,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              12 |            2 |
+| No           | No                    | No                     |              68 |           13 |
 | No           | No                    | Yes                    |              98 |           13 |
 | No           | Yes                   | No                     |              64 |           32 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |            3968 |          612 |
+| Yes          | No                    | Yes                    |            3968 |          573 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -59,109 +58,109 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------------------------------+-----------------------------------+---------------------------------------+------------------+----------------+
-|              Clock Signal              |           Enable Signal           |            Set/Reset Signal           | Slice Load Count | Bel Load Count |
-+----------------------------------------+-----------------------------------+---------------------------------------+------------------+----------------+
-|  rgf/Registers_reg[1][0]_LDC_i_1_n_10  |                                   | rgf/Registers_reg[1][0]_LDC_i_2_n_10  |                1 |              2 |
-|  rgf/Registers_reg[1][17]_LDC_i_1_n_10 |                                   | rgf/Registers_reg[1][17]_LDC_i_2_n_10 |                1 |              2 |
-|  rgf/Registers_reg[1][11]_LDC_i_1_n_10 |                                   | rgf/Registers_reg[1][11]_LDC_i_2_n_10 |                1 |              2 |
-|  rgf/Registers_reg[1][15]_LDC_i_1_n_10 |                                   | rgf/Registers_reg[1][15]_LDC_i_2_n_10 |                1 |              2 |
-|  rgf/Registers_reg[1][12]_LDC_i_1_n_10 |                                   | rgf/Registers_reg[1][12]_LDC_i_2_n_10 |                1 |              2 |
-|  rgf/Registers_reg[1][10]_LDC_i_1_n_10 |                                   | rgf/Registers_reg[1][10]_LDC_i_2_n_10 |                1 |              2 |
-|  rgf/Registers_reg[1][14]_LDC_i_1_n_10 |                                   | rgf/Registers_reg[1][14]_LDC_i_2_n_10 |                1 |              2 |
-|  rgf/Registers_reg[1][16]_LDC_i_1_n_10 |                                   | rgf/Registers_reg[1][16]_LDC_i_2_n_10 |                1 |              2 |
-|  rgf/Registers_reg[1][13]_LDC_i_1_n_10 |                                   | rgf/Registers_reg[1][13]_LDC_i_2_n_10 |                1 |              2 |
-|  rgf/Registers_reg[1][19]_LDC_i_1_n_10 |                                   | rgf/Registers_reg[1][19]_LDC_i_2_n_10 |                1 |              2 |
-|  rgf/Registers_reg[1][23]_LDC_i_1_n_10 |                                   | rgf/Registers_reg[1][23]_LDC_i_2_n_10 |                1 |              2 |
-|  rgf/Registers_reg[1][1]_LDC_i_1_n_10  |                                   | rgf/Registers_reg[1][1]_LDC_i_2_n_10  |                1 |              2 |
-|  rgf/Registers_reg[1][18]_LDC_i_1_n_10 |                                   | rgf/Registers_reg[1][18]_LDC_i_2_n_10 |                1 |              2 |
-|  rgf/Registers_reg[1][2]_LDC_i_1_n_10  |                                   | rgf/Registers_reg[1][2]_LDC_i_2_n_10  |                1 |              2 |
-|  rgf/Registers_reg[1][3]_LDC_i_1_n_10  |                                   | rgf/Registers_reg[1][3]_LDC_i_2_n_10  |                1 |              2 |
-|  rgf/Registers_reg[1][4]_LDC_i_1_n_10  |                                   | rgf/Registers_reg[1][4]_LDC_i_2_n_10  |                1 |              2 |
-|  rgf/Registers_reg[1][31]_LDC_i_1_n_10 |                                   | rgf/Registers_reg[1][31]_LDC_i_2_n_10 |                1 |              2 |
-|  rgf/Registers_reg[1][9]_LDC_i_1_n_10  |                                   | rgf/Registers_reg[1][9]_LDC_i_2_n_10  |                1 |              2 |
-|  rgf/Registers_reg[1][7]_LDC_i_1_n_10  |                                   | rgf/Registers_reg[1][7]_LDC_i_2_n_10  |                1 |              2 |
-|  rgf/Registers_reg[1][8]_LDC_i_1_n_10  |                                   | rgf/Registers_reg[1][8]_LDC_i_2_n_10  |                1 |              2 |
-|  rgf/Registers_reg[1][5]_LDC_i_1_n_10  |                                   | rgf/Registers_reg[1][5]_LDC_i_2_n_10  |                1 |              2 |
-|  rgf/Registers_reg[1][6]_LDC_i_1_n_10  |                                   | rgf/Registers_reg[1][6]_LDC_i_2_n_10  |                1 |              2 |
-|  n_4_3184_BUFG                         |                                   | rgf/Registers_reg[1][25]_LDC_i_1_n_10 |                1 |              2 |
-|  n_2_3196_BUFG                         |                                   | rgf/Registers_reg[1][27]_LDC_i_1_n_10 |                1 |              2 |
-|  n_8_3158_BUFG                         |                                   | rgf/Registers_reg[1][21]_LDC_i_1_n_10 |                1 |              2 |
-|  n_3_3190_BUFG                         |                                   | rgf/Registers_reg[1][26]_LDC_i_1_n_10 |                1 |              2 |
-|  n_5_3177_BUFG                         |                                   | rgf/Registers_reg[1][24]_LDC_i_1_n_10 |                1 |              2 |
-|  n_0_3209_BUFG                         |                                   | rgf/Registers_reg[1][29]_LDC_i_1_n_10 |                1 |              2 |
-|  n_7_3164_BUFG                         |                                   | rgf/Registers_reg[1][22]_LDC_i_1_n_10 |                1 |              2 |
-|  n_9_3151_BUFG                         |                                   | rgf/Registers_reg[1][20]_LDC_i_1_n_10 |                1 |              2 |
-|  n_1_3203_BUFG                         |                                   | rgf/Registers_reg[1][28]_LDC_i_1_n_10 |                1 |              2 |
-|  n_6_3215_BUFG                         |                                   | rgf/Registers_reg[1][30]_LDC_i_1_n_10 |                1 |              2 |
-|  clo/CLK                               |                                   | rst_IBUF                              |                2 |              4 |
-|  cu/ALUSrc_reg_i_2_n_10                |                                   |                                       |                1 |              4 |
-|  clk_out_BUFG                          |                                   |                                       |                1 |              8 |
-|  clk_out_BUFG                          | rgf/Registers_reg[1][15]_LDC_n_10 | rgf/Registers_reg[1][15]_LDC_i_2_n_10 |                9 |             62 |
-|  clk_out_BUFG                          | rgf/Registers_reg[1][14]_LDC_n_10 | rgf/Registers_reg[1][14]_LDC_i_2_n_10 |               10 |             62 |
-|  clk_out_BUFG                          | rgf/Registers_reg[1][11]_LDC_n_10 | rgf/Registers_reg[1][11]_LDC_i_2_n_10 |               12 |             62 |
-|  clk_out_BUFG                          | rgf/Registers_reg[1][12]_LDC_n_10 | rgf/Registers_reg[1][12]_LDC_i_2_n_10 |               11 |             62 |
-|  clk_out_BUFG                          | rgf/Registers_reg[1][1]_LDC_n_10  | rgf/Registers_reg[1][1]_LDC_i_2_n_10  |                9 |             62 |
-|  clk_out_BUFG                          | rgf/Registers_reg[1][23]_LDC_n_10 | rgf/Registers_reg[1][23]_LDC_i_2_n_10 |               10 |             62 |
-|  clk_out_BUFG                          | rgf/Registers_reg[1][20]_LDC_n_10 | rgf/Registers_reg[1][20]_LDC_i_1_n_10 |                8 |             62 |
-|  clk_out_BUFG                          | rgf/Registers_reg[1][22]_LDC_n_10 | rgf/Registers_reg[1][22]_LDC_i_1_n_10 |                9 |             62 |
-|  clk_out_BUFG                          | rgf/Registers_reg[1][18]_LDC_n_10 | rgf/Registers_reg[1][18]_LDC_i_2_n_10 |               12 |             62 |
-|  clk_out_BUFG                          | rgf/Registers_reg[1][25]_LDC_n_10 | rgf/Registers_reg[1][25]_LDC_i_1_n_10 |               10 |             62 |
-|  clk_out_BUFG                          | rgf/Registers_reg[1][26]_LDC_n_10 | rgf/Registers_reg[1][26]_LDC_i_1_n_10 |               11 |             62 |
-|  clk_out_BUFG                          | rgf/Registers_reg[1][19]_LDC_n_10 | rgf/Registers_reg[1][19]_LDC_i_2_n_10 |               12 |             62 |
-|  clk_out_BUFG                          | rgf/Registers_reg[1][21]_LDC_n_10 | rgf/Registers_reg[1][21]_LDC_i_1_n_10 |                9 |             62 |
-|  clk_out_BUFG                          | rgf/Registers_reg[1][24]_LDC_n_10 | rgf/Registers_reg[1][24]_LDC_i_1_n_10 |                8 |             62 |
-|  clk_out_BUFG                          | rgf/Registers_reg[1][3]_LDC_n_10  | rgf/Registers_reg[1][3]_LDC_i_2_n_10  |                9 |             62 |
-|  clk_out_BUFG                          | rgf/Registers_reg[1][27]_LDC_n_10 | rgf/Registers_reg[1][27]_LDC_i_1_n_10 |               10 |             62 |
-|  clk_out_BUFG                          | rgf/Registers_reg[1][4]_LDC_n_10  | rgf/Registers_reg[1][4]_LDC_i_2_n_10  |               12 |             62 |
-|  clk_out_BUFG                          | rgf/Registers_reg[1][29]_LDC_n_10 | rgf/Registers_reg[1][29]_LDC_i_1_n_10 |                8 |             62 |
-|  clk_out_BUFG                          | rgf/Registers_reg[1][2]_LDC_n_10  | rgf/Registers_reg[1][2]_LDC_i_2_n_10  |               11 |             62 |
-|  clk_out_BUFG                          | rgf/Registers_reg[1][30]_LDC_n_10 | rgf/Registers_reg[1][30]_LDC_i_1_n_10 |                9 |             62 |
-|  clk_out_BUFG                          | rgf/Registers_reg[1][31]_LDC_n_10 | rgf/Registers_reg[1][31]_LDC_i_2_n_10 |               12 |             62 |
-|  clk_out_BUFG                          | rgf/Registers_reg[1][28]_LDC_n_10 | rgf/Registers_reg[1][28]_LDC_i_1_n_10 |                9 |             62 |
-|  clk_out_BUFG                          | rgf/Registers_reg[1][8]_LDC_n_10  | rgf/Registers_reg[1][8]_LDC_i_2_n_10  |               10 |             62 |
-|  clk_out_BUFG                          | rgf/Registers_reg[1][5]_LDC_n_10  | rgf/Registers_reg[1][5]_LDC_i_2_n_10  |                9 |             62 |
-|  clk_out_BUFG                          | rgf/Registers_reg[1][7]_LDC_n_10  | rgf/Registers_reg[1][7]_LDC_i_2_n_10  |               10 |             62 |
-|  clk_out_BUFG                          | rgf/Registers_reg[1][6]_LDC_n_10  | rgf/Registers_reg[1][6]_LDC_i_2_n_10  |               11 |             62 |
-|  clk_out_BUFG                          | rgf/Registers_reg[1][9]_LDC_n_10  | rgf/Registers_reg[1][9]_LDC_i_2_n_10  |                8 |             62 |
-|  clk_out_BUFG                          | rgf/Registers[1][1]_P_i_1_n_10    | rgf/Registers_reg[1][1]_LDC_i_1_n_10  |                9 |             62 |
-|  clk_out_BUFG                          | rgf/Registers[1][0]_P_i_1_n_10    | rgf/Registers_reg[1][0]_LDC_i_1_n_10  |               10 |             62 |
-|  clk_out_BUFG                          | rgf/Registers[1][13]_P_i_1_n_10   | rgf/Registers_reg[1][13]_LDC_i_1_n_10 |                9 |             62 |
-|  clk_out_BUFG                          | rgf/Registers[1][16]_P_i_1_n_10   | rgf/Registers_reg[1][16]_LDC_i_1_n_10 |               10 |             62 |
-|  clk_out_BUFG                          | rgf/Registers[1][11]_P_i_1_n_10   | rgf/Registers_reg[1][11]_LDC_i_1_n_10 |               10 |             62 |
-|  clk_out_BUFG                          | rgf/Registers[1][26]_P_i_1_n_10   | n_3_3190_BUFG                         |                9 |             62 |
-|  clk_out_BUFG                          | rgf/Registers[1][30]_P_i_1_n_10   | n_6_3215_BUFG                         |                9 |             62 |
-|  clk_out_BUFG                          | rgf/Registers[1][12]_P_i_1_n_10   | rgf/Registers_reg[1][12]_LDC_i_1_n_10 |               14 |             62 |
-|  clk_out_BUFG                          | rgf/Registers[1][20]_P_i_1_n_10   | n_9_3151_BUFG                         |                9 |             62 |
-|  clk_out_BUFG                          | rgf/Registers[1][31]_P_i_1_n_10   | rgf/Registers_reg[1][31]_LDC_i_1_n_10 |               10 |             62 |
-|  clk_out_BUFG                          | rgf/Registers[1][4]_P_i_1_n_10    | rgf/Registers_reg[1][4]_LDC_i_1_n_10  |                7 |             62 |
-|  clk_out_BUFG                          | rgf/Registers[1][7]_P_i_1_n_10    | rgf/Registers_reg[1][7]_LDC_i_1_n_10  |                9 |             62 |
-|  clk_out_BUFG                          | rgf/Registers[1][15]_P_i_1_n_10   | rgf/Registers_reg[1][15]_LDC_i_1_n_10 |                8 |             62 |
-|  clk_out_BUFG                          | rgf/Registers[1][18]_P_i_1_n_10   | rgf/Registers_reg[1][18]_LDC_i_1_n_10 |               12 |             62 |
-|  clk_out_BUFG                          | rgf/Registers[1][21]_P_i_1_n_10   | n_8_3158_BUFG                         |               13 |             62 |
-|  clk_out_BUFG                          | rgf/Registers[1][3]_P_i_1_n_10    | rgf/Registers_reg[1][3]_LDC_i_1_n_10  |                9 |             62 |
-|  clk_out_BUFG                          | rgf/Registers[1][25]_P_i_1_n_10   | n_4_3184_BUFG                         |                7 |             62 |
-|  clk_out_BUFG                          | rgf/Registers[1][24]_P_i_1_n_10   | n_5_3177_BUFG                         |                9 |             62 |
-|  clk_out_BUFG                          | rgf/Registers[1][29]_P_i_1_n_10   | n_0_3209_BUFG                         |                7 |             62 |
-|  clk_out_BUFG                          | rgf/Registers[1][9]_P_i_1_n_10    | rgf/Registers_reg[1][9]_LDC_i_1_n_10  |                6 |             62 |
-|  clk_out_BUFG                          | rgf/Registers[1][6]_P_i_1_n_10    | rgf/Registers_reg[1][6]_LDC_i_1_n_10  |               10 |             62 |
-|  clk_out_BUFG                          | rgf/Registers[1][17]_P_i_1_n_10   | rgf/Registers_reg[1][17]_LDC_i_1_n_10 |               10 |             62 |
-|  clk_out_BUFG                          | rgf/Registers[1][27]_P_i_1_n_10   | n_2_3196_BUFG                         |                7 |             62 |
-|  clk_out_BUFG                          | rgf/Registers[1][8]_P_i_1_n_10    | rgf/Registers_reg[1][8]_LDC_i_1_n_10  |                9 |             62 |
-|  clk_out_BUFG                          | rgf/Registers[1][14]_P_i_1_n_10   | rgf/Registers_reg[1][14]_LDC_i_1_n_10 |                8 |             62 |
-|  clk_out_BUFG                          | rgf/Registers[1][10]_P_i_1_n_10   | rgf/Registers_reg[1][10]_LDC_i_1_n_10 |                9 |             62 |
-|  clk_out_BUFG                          | rgf/Registers[1][23]_P_i_1_n_10   | rgf/Registers_reg[1][23]_LDC_i_1_n_10 |                8 |             62 |
-|  clk_out_BUFG                          | rgf/Registers[1][5]_P_i_1_n_10    | rgf/Registers_reg[1][5]_LDC_i_1_n_10  |                8 |             62 |
-|  clk_out_BUFG                          | rgf/Registers[1][19]_P_i_1_n_10   | rgf/Registers_reg[1][19]_LDC_i_1_n_10 |               11 |             62 |
-|  clk_out_BUFG                          | rgf/Registers[1][22]_P_i_1_n_10   | n_7_3164_BUFG                         |                8 |             62 |
-|  clk_out_BUFG                          | rgf/Registers[1][28]_P_i_1_n_10   | n_1_3203_BUFG                         |               10 |             62 |
-|  clk_out_BUFG                          | rgf/Registers[1][2]_P_i_1_n_10    | rgf/Registers_reg[1][2]_LDC_i_1_n_10  |               13 |             62 |
-|  clk_out_BUFG                          | rgf/Registers_reg[1][0]_LDC_n_10  | rgf/Registers_reg[1][0]_LDC_i_2_n_10  |                9 |             62 |
-|  clk_out_BUFG                          | rgf/Registers_reg[1][17]_LDC_n_10 | rgf/Registers_reg[1][17]_LDC_i_2_n_10 |               11 |             62 |
-|  clk_out_BUFG                          | rgf/Registers_reg[1][16]_LDC_n_10 | rgf/Registers_reg[1][16]_LDC_i_2_n_10 |               10 |             62 |
-|  clk_out_BUFG                          | rgf/Registers_reg[1][10]_LDC_n_10 | rgf/Registers_reg[1][10]_LDC_i_2_n_10 |                8 |             62 |
-|  clk_out_BUFG                          | rgf/Registers_reg[1][13]_LDC_n_10 | rgf/Registers_reg[1][13]_LDC_i_2_n_10 |                9 |             62 |
-|  clk_IBUF_BUFG                         |                                   | rst_IBUF                              |               11 |             94 |
-+----------------------------------------+-----------------------------------+---------------------------------------+------------------+----------------+
++---------------------------------------+-----------------------------------+--------------------------------------+------------------+----------------+
+|              Clock Signal             |           Enable Signal           |           Set/Reset Signal           | Slice Load Count | Bel Load Count |
++---------------------------------------+-----------------------------------+--------------------------------------+------------------+----------------+
+|  testt/Registers_reg[1][10]_P         |                                   | testt/Registers_reg[31][10]_C_0      |                1 |              2 |
+|  testt/Registers_reg[1][15]_P         |                                   | testt/Registers_reg[31][15]_C        |                1 |              2 |
+|  testt/Registers_reg[1][23]_P         |                                   | testt/Registers_reg[31][23]_C        |                1 |              2 |
+|  testt/Registers_reg[1][3]_P          |                                   | testt/Registers_reg[31][3]_C         |                1 |              2 |
+|  testt/Registers_reg[1][16]_P         |                                   | testt/Registers_reg[31][16]_C        |                1 |              2 |
+|  testt/Registers_reg[1][11]_P         |                                   | testt/Registers_reg[31][11]_C_1      |                1 |              2 |
+|  testt/Registers_reg[1][8]_P          |                                   | testt/Registers_reg[31][8]_C_0       |                1 |              2 |
+|  testt/Registers_reg[1][4]_P_0        |                                   | testt/Registers_reg[31][4]_C         |                1 |              2 |
+|  testt/Registers_reg[1][19]_P         |                                   | testt/Registers_reg[31][19]_C        |                1 |              2 |
+|  testt/Registers_reg[1][17]_P         |                                   | testt/Registers_reg[31][17]_C        |                1 |              2 |
+|  testt/Registers_reg[1][1]_P          |                                   | testt/Registers_reg[31][1]_C_0       |                1 |              2 |
+|  testt/Registers_reg[1][5]_P          |                                   | testt/Registers_reg[31][5]_C         |                1 |              2 |
+|  n_9_2610_BUFG                        |                                   | testt/Registers_reg[31][20]_C        |                1 |              2 |
+|  testt/Registers_reg[1][14]_P         |                                   | testt/Registers_reg[31][14]_C        |                1 |              2 |
+|  testt/Registers_reg[1][13]_P         |                                   | testt/Registers_reg[31][13]_C        |                1 |              2 |
+|  testt/Registers_reg[1][2]_P          |                                   | testt/Registers_reg[31][2]_C         |                1 |              2 |
+|  testt/Registers_reg[1][18]_P         |                                   | testt/Registers_reg[31][18]_C        |                1 |              2 |
+|  testt/Registers_reg[1][6]_P          |                                   | testt/Registers_reg[31][6]_C         |                1 |              2 |
+|  testt/Registers_reg[1][31]_P         |                                   | testt/Registers_reg[31][31]_C        |                1 |              2 |
+|  testt/Registers_reg[1][9]_P          |                                   | testt/Registers_reg[31][9]_C_0       |                1 |              2 |
+|  testt/Registers_reg[1][12]_P         |                                   | testt/Registers_reg[31][12]_C        |                1 |              2 |
+|  testt/Registers_reg[1][7]_P          |                                   | testt/Registers_reg[31][7]_C         |                1 |              2 |
+|  n_6_2674_BUFG                        |                                   | testt/Registers_reg[31][30]_C        |                1 |              2 |
+|  n_7_2623_BUFG                        |                                   | testt/Registers_reg[31][22]_C        |                1 |              2 |
+|  n_5_2636_BUFG                        |                                   | testt/Registers_reg[31][24]_C        |                1 |              2 |
+|  n_8_2617_BUFG                        |                                   | testt/Registers_reg[31][21]_C        |                1 |              2 |
+|  n_2_2655_BUFG                        |                                   | testt/Registers_reg[31][27]_C        |                1 |              2 |
+|  rgf/Registers_reg[1][0]_LDC_i_1_n_10 |                                   | rgf/Registers_reg[1][0]_LDC_i_2_n_10 |                1 |              2 |
+|  n_1_2662_BUFG                        |                                   | testt/Registers_reg[31][28]_C        |                1 |              2 |
+|  n_4_2643_BUFG                        |                                   | testt/Registers_reg[31][25]_C        |                1 |              2 |
+|  n_0_2668_BUFG                        |                                   | testt/Registers_reg[31][29]_C        |                1 |              2 |
+|  n_3_2649_BUFG                        |                                   | testt/Registers_reg[31][26]_C        |                1 |              2 |
+|  clo/CLK                              |                                   | rst_IBUF                             |                1 |              4 |
+|  testt/programCounter_reg[4]_1        |                                   |                                      |                1 |              4 |
+|  clk_out_BUFG                         | rgf/Registers[1][10]_P_i_1_n_10   | testt/Registers_reg[1][10]_P         |                7 |             62 |
+|  clk_out_BUFG                         | rgf/Registers[1][24]_P_i_1_n_10   | n_5_2636_BUFG                        |               13 |             62 |
+|  clk_out_BUFG                         | rgf/Registers[1][11]_P_i_1_n_10   | testt/Registers_reg[1][11]_P         |               10 |             62 |
+|  clk_out_BUFG                         | rgf/Registers[1][29]_P_i_1_n_10   | n_0_2668_BUFG                        |                7 |             62 |
+|  clk_out_BUFG                         | rgf/Registers[1][15]_P_i_1_n_10   | testt/Registers_reg[1][15]_P         |                9 |             62 |
+|  clk_out_BUFG                         | rgf/Registers[1][16]_P_i_1_n_10   | testt/Registers_reg[1][16]_P         |                8 |             62 |
+|  clk_out_BUFG                         | rgf/Registers[1][13]_P_i_1_n_10   | testt/Registers_reg[1][13]_P         |                9 |             62 |
+|  clk_out_BUFG                         | rgf/Registers[1][0]_P_i_1_n_10    | rgf/Registers_reg[1][0]_LDC_i_1_n_10 |               10 |             62 |
+|  clk_out_BUFG                         | rgf/Registers[1][17]_P_i_1_n_10   | testt/Registers_reg[1][17]_P         |                9 |             62 |
+|  clk_out_BUFG                         | rgf/Registers[1][1]_P_i_1_n_10    | testt/Registers_reg[1][1]_P          |                8 |             62 |
+|  clk_out_BUFG                         | rgf/Registers[1][20]_P_i_1_n_10   | n_9_2610_BUFG                        |                9 |             62 |
+|  clk_out_BUFG                         | rgf/Registers[1][18]_P_i_1_n_10   | testt/Registers_reg[1][18]_P         |               11 |             62 |
+|  clk_out_BUFG                         | rgf/Registers[1][23]_P_i_1_n_10   | testt/Registers_reg[1][23]_P         |                8 |             62 |
+|  clk_out_BUFG                         | rgf/Registers[1][21]_P_i_1_n_10   | n_8_2617_BUFG                        |               11 |             62 |
+|  clk_out_BUFG                         | rgf/Registers[1][22]_P_i_1_n_10   | n_7_2623_BUFG                        |                7 |             62 |
+|  clk_out_BUFG                         | rgf/Registers[1][25]_P_i_1_n_10   | n_4_2643_BUFG                        |                7 |             62 |
+|  clk_out_BUFG                         | rgf/Registers[1][19]_P_i_1_n_10   | testt/Registers_reg[1][19]_P         |                7 |             62 |
+|  clk_out_BUFG                         | rgf/Registers[1][26]_P_i_1_n_10   | n_3_2649_BUFG                        |                8 |             62 |
+|  clk_out_BUFG                         | rgf/Registers[1][9]_P_i_1_n_10    | testt/Registers_reg[1][9]_P          |               10 |             62 |
+|  clk_out_BUFG                         | rgf/Registers[1][6]_P_i_1_n_10    | testt/Registers_reg[1][6]_P          |                8 |             62 |
+|  clk_out_BUFG                         | rgf/Registers[1][8]_P_i_1_n_10    | testt/Registers_reg[1][8]_P          |                8 |             62 |
+|  clk_out_BUFG                         | rgf/Registers[1][2]_P_i_1_n_10    | testt/Registers_reg[1][2]_P          |                8 |             62 |
+|  clk_out_BUFG                         | rgf/Registers[1][3]_P_i_1_n_10    | testt/Registers_reg[1][3]_P          |                6 |             62 |
+|  clk_out_BUFG                         | rgf/Registers[1][30]_P_i_1_n_10   | n_6_2674_BUFG                        |                8 |             62 |
+|  clk_out_BUFG                         | rgf/Registers[1][7]_P_i_1_n_10    | testt/Registers_reg[1][7]_P          |                5 |             62 |
+|  clk_out_BUFG                         | rgf/Registers[1][4]_P_i_1_n_10    | testt/Registers_reg[1][4]_P_0        |                7 |             62 |
+|  clk_out_BUFG                         | rgf/Registers[1][31]_P_i_1_n_10   | testt/Registers_reg[1][31]_P         |                7 |             62 |
+|  clk_out_BUFG                         | rgf/Registers[1][5]_P_i_1_n_10    | testt/Registers_reg[1][5]_P          |                9 |             62 |
+|  clk_out_BUFG                         | rgf/Registers_reg[1][14]_LDC_n_10 | testt/Registers_reg[31][14]_C        |                9 |             62 |
+|  clk_out_BUFG                         | rgf/Registers_reg[1][15]_LDC_n_10 | testt/Registers_reg[31][15]_C        |                9 |             62 |
+|  clk_out_BUFG                         | rgf/Registers_reg[1][18]_LDC_n_10 | testt/Registers_reg[31][18]_C        |               13 |             62 |
+|  clk_out_BUFG                         | rgf/Registers_reg[1][11]_LDC_n_10 | testt/Registers_reg[31][11]_C_1      |               11 |             62 |
+|  clk_out_BUFG                         | rgf/Registers_reg[1][16]_LDC_n_10 | testt/Registers_reg[31][16]_C        |                8 |             62 |
+|  clk_out_BUFG                         | rgf/Registers_reg[1][12]_LDC_n_10 | testt/Registers_reg[31][12]_C        |                9 |             62 |
+|  clk_out_BUFG                         | rgf/Registers_reg[1][13]_LDC_n_10 | testt/Registers_reg[31][13]_C        |               11 |             62 |
+|  clk_out_BUFG                         | rgf/Registers_reg[1][0]_LDC_n_10  | rgf/Registers_reg[1][0]_LDC_i_2_n_10 |               12 |             62 |
+|  clk_out_BUFG                         | rgf/Registers_reg[1][10]_LDC_n_10 | testt/Registers_reg[31][10]_C_0      |               12 |             62 |
+|  clk_out_BUFG                         | rgf/Registers_reg[1][17]_LDC_n_10 | testt/Registers_reg[31][17]_C        |               11 |             62 |
+|  clk_out_BUFG                         | rgf/Registers_reg[1][19]_LDC_n_10 | testt/Registers_reg[31][19]_C        |               10 |             62 |
+|  clk_out_BUFG                         | rgf/Registers_reg[1][1]_LDC_n_10  | testt/Registers_reg[31][1]_C_0       |                8 |             62 |
+|  clk_out_BUFG                         | rgf/Registers_reg[1][2]_LDC_n_10  | testt/Registers_reg[31][2]_C         |               10 |             62 |
+|  clk_out_BUFG                         | rgf/Registers_reg[1][23]_LDC_n_10 | testt/Registers_reg[31][23]_C        |                8 |             62 |
+|  clk_out_BUFG                         | rgf/Registers_reg[1][30]_LDC_n_10 | testt/Registers_reg[31][30]_C        |                8 |             62 |
+|  clk_out_BUFG                         | rgf/Registers_reg[1][28]_LDC_n_10 | testt/Registers_reg[31][28]_C        |               10 |             62 |
+|  clk_out_BUFG                         | rgf/Registers_reg[1][27]_LDC_n_10 | testt/Registers_reg[31][27]_C        |                8 |             62 |
+|  clk_out_BUFG                         | rgf/Registers_reg[1][22]_LDC_n_10 | testt/Registers_reg[31][22]_C        |               12 |             62 |
+|  clk_out_BUFG                         | rgf/Registers_reg[1][24]_LDC_n_10 | testt/Registers_reg[31][24]_C        |               13 |             62 |
+|  clk_out_BUFG                         | rgf/Registers_reg[1][29]_LDC_n_10 | testt/Registers_reg[31][29]_C        |                8 |             62 |
+|  clk_out_BUFG                         | rgf/Registers_reg[1][26]_LDC_n_10 | testt/Registers_reg[31][26]_C        |               11 |             62 |
+|  clk_out_BUFG                         | rgf/Registers_reg[1][31]_LDC_n_10 | testt/Registers_reg[31][31]_C        |                9 |             62 |
+|  clk_out_BUFG                         | rgf/Registers_reg[1][20]_LDC_n_10 | testt/Registers_reg[31][20]_C        |                9 |             62 |
+|  clk_out_BUFG                         | rgf/Registers_reg[1][25]_LDC_n_10 | testt/Registers_reg[31][25]_C        |                9 |             62 |
+|  clk_out_BUFG                         | rgf/Registers_reg[1][21]_LDC_n_10 | testt/Registers_reg[31][21]_C        |                9 |             62 |
+|  clk_out_BUFG                         | rgf/Registers_reg[1][3]_LDC_n_10  | testt/Registers_reg[31][3]_C         |                9 |             62 |
+|  clk_out_BUFG                         | rgf/Registers_reg[1][4]_LDC_n_10  | testt/Registers_reg[31][4]_C         |               10 |             62 |
+|  clk_out_BUFG                         | rgf/Registers_reg[1][8]_LDC_n_10  | testt/Registers_reg[31][8]_C_0       |                9 |             62 |
+|  clk_out_BUFG                         | rgf/Registers_reg[1][6]_LDC_n_10  | testt/Registers_reg[31][6]_C         |               12 |             62 |
+|  clk_out_BUFG                         | rgf/Registers_reg[1][7]_LDC_n_10  | testt/Registers_reg[31][7]_C         |                6 |             62 |
+|  clk_out_BUFG                         | rgf/Registers_reg[1][5]_LDC_n_10  | testt/Registers_reg[31][5]_C         |                9 |             62 |
+|  clk_out_BUFG                         | rgf/Registers[1][12]_P_i_1_n_10   | testt/Registers_reg[1][12]_P         |                6 |             62 |
+|  clk_out_BUFG                         | rgf/Registers[1][14]_P_i_1_n_10   | testt/Registers_reg[1][14]_P         |                7 |             62 |
+|  clk_out_BUFG                         | rgf/Registers[1][27]_P_i_1_n_10   | n_2_2655_BUFG                        |                8 |             62 |
+|  clk_out_BUFG                         | rgf/Registers[1][28]_P_i_1_n_10   | n_1_2662_BUFG                        |                6 |             62 |
+|  clk_out_BUFG                         | rgf/Registers_reg[1][9]_LDC_n_10  | testt/Registers_reg[31][9]_C_0       |               10 |             62 |
+|  clk_out_BUFG                         |                                   |                                      |               12 |             64 |
+|  clk_IBUF_BUFG                        |                                   | rst_IBUF                             |               12 |             94 |
++---------------------------------------+-----------------------------------+--------------------------------------+------------------+----------------+
 
 

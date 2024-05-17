@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Fri May 17 09:39:04 2024
-# Process ID: 9040
+# Start of session at: Fri May 17 19:37:27 2024
+# Process ID: 25812
 # Current directory: C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.runs/synth_1
 # Command line: vivado.exe -log CPU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU.tcl
 # Log file: C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.runs/synth_1/CPU.vds
@@ -15,11 +15,10 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 5536 
-WARNING: [Synth 8-1958] event expressions must result in a singular type [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/ROM.v:28]
+INFO: Helper process launched with PID 2284 
 WARNING: [Synth 8-2507] parameter declaration becomes local in clk_div with formal parameter declaration list [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/clk_div.v:28]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 421.523 ; gain = 108.863
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 421.297 ; gain = 108.285
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'CPU' [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/CPU.v:23]
 INFO: [Synth 8-6157] synthesizing module 'clk_div' [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/clk_div.v:23]
@@ -36,7 +35,6 @@ INFO: [Synth 8-6157] synthesizing module 'program_ROM' [C:/Users/Omar Ganna/AUC/
 	Parameter filename bound to: assembly.txt - type: string 
 	Parameter address_width bound to: 12 - type: integer 
 INFO: [Synth 8-3876] $readmem data file 'C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/assembly.txt' is read successfully [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/ROM.v:24]
-WARNING: [Synth 8-567] referenced signal 'address' should be on the sensitivity list [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/ROM.v:28]
 INFO: [Synth 8-6155] done synthesizing module 'program_ROM' (2#1) [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/ROM.v:10]
 INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/control_Unit.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (3#1) [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/control_Unit.v:14]
@@ -93,11 +91,11 @@ INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/Omar Ganna/AUC/Digital 
 INFO: [Synth 8-6155] done synthesizing module 'ALU' (6#1) [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/ALU.v:12]
 INFO: [Synth 8-6157] synthesizing module 'data_display' [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/data_display.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'data_display' (7#1) [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/data_display.v:23]
+WARNING: [Synth 8-567] referenced signal 'units' should be on the sensitivity list [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/CPU.v:84]
+WARNING: [Synth 8-567] referenced signal 'tens' should be on the sensitivity list [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/CPU.v:84]
+WARNING: [Synth 8-567] referenced signal 'hundreds' should be on the sensitivity list [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/CPU.v:84]
+WARNING: [Synth 8-567] referenced signal 'thousands' should be on the sensitivity list [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/CPU.v:84]
 INFO: [Synth 8-6157] synthesizing module 'Sev_segment_display' [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/Sev_segment_display.v:14]
-WARNING: [Synth 8-567] referenced signal 'units' should be on the sensitivity list [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/Sev_segment_display.v:22]
-WARNING: [Synth 8-567] referenced signal 'tens' should be on the sensitivity list [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/Sev_segment_display.v:22]
-WARNING: [Synth 8-567] referenced signal 'hundreds' should be on the sensitivity list [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/Sev_segment_display.v:22]
-WARNING: [Synth 8-567] referenced signal 'thousands' should be on the sensitivity list [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/Sev_segment_display.v:22]
 INFO: [Synth 8-6155] done synthesizing module 'Sev_segment_display' (8#1) [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/Sev_segment_display.v:14]
 INFO: [Synth 8-6157] synthesizing module 'Branch_Control' [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/Branch_Control.v:14]
 	Parameter BEQ bound to: 3'b000 
@@ -109,14 +107,13 @@ INFO: [Synth 8-6157] synthesizing module 'Branch_Control' [C:/Users/Omar Ganna/A
 INFO: [Synth 8-6155] done synthesizing module 'Branch_Control' (9#1) [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/Branch_Control.v:14]
 INFO: [Synth 8-6157] synthesizing module 'shifter' [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/shifter.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'shifter' (10#1) [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/shifter.v:23]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/CPU.v:96]
-WARNING: [Synth 8-3848] Net Nflag in module/entity CPU does not have driver. [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/CPU.v:88]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/CPU.v:106]
+WARNING: [Synth 8-3848] Net Nflag in module/entity CPU does not have driver. [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/CPU.v:98]
 INFO: [Synth 8-6155] done synthesizing module 'CPU' (11#1) [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/CPU.v:23]
 WARNING: [Synth 8-3331] design ControlUnit has unconnected port opcode[1]
 WARNING: [Synth 8-3331] design ControlUnit has unconnected port opcode[0]
-WARNING: [Synth 8-3331] design program_ROM has unconnected port clk
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 460.758 ; gain = 148.098
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 461.422 ; gain = 148.410
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -125,15 +122,15 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin BC:Nflag to constant 0 [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/CPU.v:88]
+WARNING: [Synth 8-3295] tying undriven pin BC:Nflag to constant 0 [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/CPU.v:98]
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 460.758 ; gain = 148.098
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 461.422 ; gain = 148.410
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 460.758 ; gain = 148.098
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 461.422 ; gain = 148.410
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -149,22 +146,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 804.691 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 804.477 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 804.691 ; gain = 492.031
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 804.477 ; gain = 491.465
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 804.691 ; gain = 492.031
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 804.477 ; gain = 491.465
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 804.691 ; gain = 492.031
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 804.477 ; gain = 491.465
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "out_clk" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "out_clk" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
@@ -182,7 +179,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'test_reg' [C:/Users/Omar Ga
 WARNING: [Synth 8-327] inferring latch for variable 'CFlag_reg' [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/ALU.v:39]
 WARNING: [Synth 8-327] inferring latch for variable 'OFlag_reg' [C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/ALU.v:40]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 804.691 ; gain = 492.031
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 804.477 ; gain = 491.465
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -205,7 +202,7 @@ Detailed RTL Component Info :
 +---XORs : 
 	   2 Input     32 Bit         XORs := 1     
 +---Registers : 
-	               32 Bit    Registers := 32    
+	               32 Bit    Registers := 33    
 	               27 Bit    Registers := 1     
 	               18 Bit    Registers := 1     
 	               12 Bit    Registers := 1     
@@ -244,6 +241,7 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 2     
 	   4 Input     12 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 1     
 Module clk_div 
@@ -270,6 +268,8 @@ Module program_ROM
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input      5 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 1     
 Module ControlUnit 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -300,7 +300,7 @@ Detailed RTL Component Info :
 Module Sev_segment_display 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   4 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -322,6 +322,14 @@ INFO: [Synth 8-5545] ROM "cl/out_clk" won't be mapped to RAM because address siz
 INFO: [Synth 8-5546] ROM "clo/out_clk" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "cl/out_clk" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\cu/RegWrite_reg )
+INFO: [Synth 8-3886] merging instance 'testt/data_reg[10]' (FD) to 'testt/data_reg[27]'
+INFO: [Synth 8-3886] merging instance 'testt/data_reg[11]' (FD) to 'testt/data_reg[27]'
+INFO: [Synth 8-3886] merging instance 'testt/data_reg[26]' (FD) to 'testt/data_reg[27]'
+INFO: [Synth 8-3886] merging instance 'testt/data_reg[27]' (FD) to 'testt/data_reg[19]'
+INFO: [Synth 8-3886] merging instance 'testt/data_reg[3]' (FD) to 'testt/data_reg[19]'
+INFO: [Synth 8-3886] merging instance 'testt/data_reg[2]' (FD) to 'testt/data_reg[19]'
+INFO: [Synth 8-3886] merging instance 'testt/data_reg[18]' (FD) to 'testt/data_reg[19]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\testt/data_reg[19] )
 INFO: [Synth 8-3886] merging instance 'cu/Jump_reg[0]' (LD) to 'cu/AUIPC_reg'
 INFO: [Synth 8-3886] merging instance 'cu/MemtoReg_reg' (LD) to 'cu/AUIPC_reg'
 INFO: [Synth 8-3886] merging instance 'cu/Jump_reg[1]' (LD) to 'cu/AUIPC_reg'
@@ -340,6 +348,7 @@ WARNING: [Synth 8-3332] Sequential element (programCounter_reg[8]) is unused and
 WARNING: [Synth 8-3332] Sequential element (programCounter_reg[7]) is unused and will be removed from module CPU.
 WARNING: [Synth 8-3332] Sequential element (programCounter_reg[6]) is unused and will be removed from module CPU.
 WARNING: [Synth 8-3332] Sequential element (programCounter_reg[5]) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (testt/data_reg[19]) is unused and will be removed from module CPU.
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (rgf/\Registers_reg[0][31]_C )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (rgf/\Registers_reg[0][30]_C )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (rgf/\Registers_reg[0][29]_C )
@@ -405,7 +414,7 @@ WARNING: [Synth 8-3332] Sequential element (Registers_reg[0][2]_C) is unused and
 WARNING: [Synth 8-3332] Sequential element (Registers_reg[0][1]_C) is unused and will be removed from module registerFile.
 WARNING: [Synth 8-3332] Sequential element (Registers_reg[0][0]_C) is unused and will be removed from module registerFile.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 804.691 ; gain = 492.031
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 804.477 ; gain = 491.465
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -438,13 +447,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 804.691 ; gain = 492.031
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 808.465 ; gain = 495.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 805.887 ; gain = 493.227
+Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:00:59 . Memory (MB): peak = 811.910 ; gain = 498.898
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -456,6 +465,8 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-3332] Sequential element (programCounter_reg[0]) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (testt/data_reg[28]) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (testt/data_reg[12]) is unused and will be removed from module CPU.
 WARNING: [Synth 8-3332] Sequential element (rgf/Registers_reg[0][31]_P) is unused and will be removed from module CPU.
 WARNING: [Synth 8-3332] Sequential element (rgf/Registers_reg[0][30]_P) is unused and will be removed from module CPU.
 WARNING: [Synth 8-3332] Sequential element (rgf/Registers_reg[0][29]_P) is unused and will be removed from module CPU.
@@ -489,7 +500,7 @@ WARNING: [Synth 8-3332] Sequential element (rgf/Registers_reg[0][2]_P) is unused
 WARNING: [Synth 8-3332] Sequential element (rgf/Registers_reg[0][1]_P) is unused and will be removed from module CPU.
 WARNING: [Synth 8-3332] Sequential element (rgf/Registers_reg[0][0]_P) is unused and will be removed from module CPU.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:00:59 . Memory (MB): peak = 874.762 ; gain = 562.102
+Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:01:00 . Memory (MB): peak = 879.020 ; gain = 566.008
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -513,7 +524,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:56 ; elapsed = 00:01:00 . Memory (MB): peak = 874.762 ; gain = 562.102
+Finished IO Insertion : Time (s): cpu = 00:00:56 ; elapsed = 00:01:01 . Memory (MB): peak = 879.020 ; gain = 566.008
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -526,7 +537,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:56 ; elapsed = 00:01:00 . Memory (MB): peak = 874.762 ; gain = 562.102
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:56 ; elapsed = 00:01:01 . Memory (MB): peak = 879.020 ; gain = 566.008
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -538,25 +549,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:56 ; elapsed = 00:01:00 . Memory (MB): peak = 874.762 ; gain = 562.102
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:56 ; elapsed = 00:01:01 . Memory (MB): peak = 879.020 ; gain = 566.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:56 ; elapsed = 00:01:00 . Memory (MB): peak = 874.762 ; gain = 562.102
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:56 ; elapsed = 00:01:01 . Memory (MB): peak = 879.020 ; gain = 566.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:56 ; elapsed = 00:01:00 . Memory (MB): peak = 874.762 ; gain = 562.102
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:56 ; elapsed = 00:01:01 . Memory (MB): peak = 879.020 ; gain = 566.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:56 ; elapsed = 00:01:00 . Memory (MB): peak = 874.762 ; gain = 562.102
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:56 ; elapsed = 00:01:01 . Memory (MB): peak = 879.020 ; gain = 566.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -575,16 +586,16 @@ Report Cell Usage:
 |1     |BUFG   |    12|
 |2     |CARRY4 |   207|
 |3     |LUT1   |    74|
-|4     |LUT2   |   343|
-|5     |LUT3   |  1443|
-|6     |LUT4   |   324|
-|7     |LUT5   |   151|
-|8     |LUT6   |   677|
-|9     |MUXF7  |   128|
-|10    |MUXF8  |    36|
+|4     |LUT2   |   342|
+|5     |LUT3   |   414|
+|6     |LUT4   |   349|
+|7     |LUT5   |   120|
+|8     |LUT6   |  1006|
+|9     |MUXF7  |   260|
+|10    |MUXF8  |    81|
 |11    |FDCE   |  1041|
 |12    |FDPE   |   992|
-|13    |FDRE   |     4|
+|13    |FDRE   |    32|
 |14    |LD     |     2|
 |15    |LDC    |    32|
 |16    |IBUF   |     2|
@@ -595,23 +606,23 @@ Report Instance Areas:
 +------+---------+------------------------+------+
 |      |Instance |Module                  |Cells |
 +------+---------+------------------------+------+
-|1     |top      |                        |  5479|
-|2     |  al     |ALU                     |    22|
+|1     |top      |                        |  4977|
+|2     |  al     |ALU                     |    20|
 |3     |  cl     |clk_div__parameterized0 |    70|
 |4     |  clo    |clk_div                 |    47|
-|5     |  cu     |ControlUnit             |    11|
-|6     |  rgf    |registerFile            |  4923|
+|5     |  cu     |ControlUnit             |     2|
+|6     |  rgf    |registerFile            |  3271|
+|7     |  testt  |program_ROM             |  1161|
 +------+---------+------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:56 ; elapsed = 00:01:00 . Memory (MB): peak = 874.762 ; gain = 562.102
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:56 ; elapsed = 00:01:01 . Memory (MB): peak = 879.020 ; gain = 566.008
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 90 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 874.762 ; gain = 218.168
-Synthesis Optimization Complete : Time (s): cpu = 00:00:56 ; elapsed = 00:01:00 . Memory (MB): peak = 874.762 ; gain = 562.102
+Synthesis finished with 0 errors, 0 critical warnings and 93 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 879.020 ; gain = 222.953
+Synthesis Optimization Complete : Time (s): cpu = 00:00:56 ; elapsed = 00:01:01 . Memory (MB): peak = 879.020 ; gain = 566.008
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 407 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 584 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-WARNING: [Netlist 29-101] Netlist 'CPU' is not ideal for floorplanning, since the cellview 'registerFile' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
@@ -620,11 +631,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   LDC => LDCE: 32 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-83 Infos, 137 Warnings, 0 Critical Warnings and 0 Errors encountered.
+91 Infos, 136 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 874.762 ; gain = 574.773
+synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 879.020 ; gain = 578.793
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.runs/synth_1/CPU.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file CPU_utilization_synth.rpt -pb CPU_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 874.762 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri May 17 09:40:10 2024...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 879.020 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri May 17 19:38:34 2024...

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Fri May 17 09:41:19 2024
+| Date         : Fri May 17 19:39:25 2024
 | Host         : DESKTOP-GQIIC2L running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file CPU_timing_summary_routed.rpt -pb CPU_timing_summary_routed.pb -rpx CPU_timing_summary_routed.rpx -warn_on_violation
 | Design       : CPU
@@ -56,23 +56,15 @@ Table of Contents
 
  There are 32 register/latch pins with no clock driven by root clock pin: rst (HIGH)
 
- There are 1988 register/latch pins with no clock driven by root clock pin: cl/out_clk_reg/Q (HIGH)
+ There are 2016 register/latch pins with no clock driven by root clock pin: cl/out_clk_reg/Q (HIGH)
 
  There are 2 register/latch pins with no clock driven by root clock pin: clo/out_clk_reg/Q (HIGH)
 
  There are 32 register/latch pins with no clock driven by root clock pin: cu/ALUSrc_reg/Q (HIGH)
 
- There are 34 register/latch pins with no clock driven by root clock pin: programCounter_reg[1]/Q (HIGH)
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[10][0]_C/Q (HIGH)
 
- There are 34 register/latch pins with no clock driven by root clock pin: programCounter_reg[2]/Q (HIGH)
-
- There are 34 register/latch pins with no clock driven by root clock pin: programCounter_reg[3]/Q (HIGH)
-
- There are 32 register/latch pins with no clock driven by root clock pin: programCounter_reg[4]/Q (HIGH)
-
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[10][0]_C/Q (HIGH)
-
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[10][0]_P/Q (HIGH)
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[10][0]_P/Q (HIGH)
 
  There are 21 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[10][10]_C/Q (HIGH)
 
@@ -114,9 +106,9 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[10][19]_P/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[10][1]_C/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[10][1]_C/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[10][1]_P/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[10][1]_P/Q (HIGH)
 
  There are 11 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[10][20]_C/Q (HIGH)
 
@@ -158,10 +150,6 @@ Table of Contents
 
  There are 2 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[10][29]_P/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[10][2]_C/Q (HIGH)
-
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[10][2]_P/Q (HIGH)
-
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[10][30]_C/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[10][30]_P/Q (HIGH)
@@ -190,9 +178,13 @@ Table of Contents
 
  There are 23 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[10][8]_P/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[11][0]_C/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[10][9]_C/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[11][0]_P/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[10][9]_P/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[11][0]_C/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[11][0]_P/Q (HIGH)
 
  There are 21 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[11][10]_C/Q (HIGH)
 
@@ -234,9 +226,9 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[11][19]_P/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[11][1]_C/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[11][1]_C/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[11][1]_P/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[11][1]_P/Q (HIGH)
 
  There are 11 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[11][20]_C/Q (HIGH)
 
@@ -278,10 +270,6 @@ Table of Contents
 
  There are 2 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[11][29]_P/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[11][2]_C/Q (HIGH)
-
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[11][2]_P/Q (HIGH)
-
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[11][30]_C/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[11][30]_P/Q (HIGH)
@@ -310,9 +298,13 @@ Table of Contents
 
  There are 23 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[11][8]_P/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[12][0]_C/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[11][9]_C/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[12][0]_P/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[11][9]_P/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[12][0]_C/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[12][0]_P/Q (HIGH)
 
  There are 21 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[12][10]_C/Q (HIGH)
 
@@ -354,9 +346,9 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[12][19]_P/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[12][1]_C/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[12][1]_C/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[12][1]_P/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[12][1]_P/Q (HIGH)
 
  There are 11 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[12][20]_C/Q (HIGH)
 
@@ -398,10 +390,6 @@ Table of Contents
 
  There are 2 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[12][29]_P/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[12][2]_C/Q (HIGH)
-
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[12][2]_P/Q (HIGH)
-
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[12][30]_C/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[12][30]_P/Q (HIGH)
@@ -430,9 +418,13 @@ Table of Contents
 
  There are 23 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[12][8]_P/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[13][0]_C/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[12][9]_C/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[13][0]_P/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[12][9]_P/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[13][0]_C/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[13][0]_P/Q (HIGH)
 
  There are 21 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[13][10]_C/Q (HIGH)
 
@@ -474,9 +466,9 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[13][19]_P/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[13][1]_C/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[13][1]_C/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[13][1]_P/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[13][1]_P/Q (HIGH)
 
  There are 11 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[13][20]_C/Q (HIGH)
 
@@ -518,10 +510,6 @@ Table of Contents
 
  There are 2 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[13][29]_P/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[13][2]_C/Q (HIGH)
-
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[13][2]_P/Q (HIGH)
-
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[13][30]_C/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[13][30]_P/Q (HIGH)
@@ -550,9 +538,13 @@ Table of Contents
 
  There are 23 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[13][8]_P/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[14][0]_C/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[13][9]_C/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[14][0]_P/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[13][9]_P/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[14][0]_C/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[14][0]_P/Q (HIGH)
 
  There are 21 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[14][10]_C/Q (HIGH)
 
@@ -594,9 +586,9 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[14][19]_P/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[14][1]_C/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[14][1]_C/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[14][1]_P/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[14][1]_P/Q (HIGH)
 
  There are 11 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[14][20]_C/Q (HIGH)
 
@@ -638,10 +630,6 @@ Table of Contents
 
  There are 2 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[14][29]_P/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[14][2]_C/Q (HIGH)
-
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[14][2]_P/Q (HIGH)
-
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[14][30]_C/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[14][30]_P/Q (HIGH)
@@ -670,9 +658,13 @@ Table of Contents
 
  There are 23 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[14][8]_P/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[15][0]_C/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[14][9]_C/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[15][0]_P/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[14][9]_P/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[15][0]_C/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[15][0]_P/Q (HIGH)
 
  There are 21 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[15][10]_C/Q (HIGH)
 
@@ -714,9 +706,9 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[15][19]_P/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[15][1]_C/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[15][1]_C/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[15][1]_P/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[15][1]_P/Q (HIGH)
 
  There are 11 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[15][20]_C/Q (HIGH)
 
@@ -758,10 +750,6 @@ Table of Contents
 
  There are 2 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[15][29]_P/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[15][2]_C/Q (HIGH)
-
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[15][2]_P/Q (HIGH)
-
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[15][30]_C/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[15][30]_P/Q (HIGH)
@@ -790,9 +778,13 @@ Table of Contents
 
  There are 23 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[15][8]_P/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[16][0]_C/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[15][9]_C/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[16][0]_P/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[15][9]_P/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[16][0]_C/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[16][0]_P/Q (HIGH)
 
  There are 21 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[16][10]_C/Q (HIGH)
 
@@ -834,9 +826,9 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[16][19]_P/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[16][1]_C/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[16][1]_C/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[16][1]_P/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[16][1]_P/Q (HIGH)
 
  There are 11 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[16][20]_C/Q (HIGH)
 
@@ -878,10 +870,6 @@ Table of Contents
 
  There are 2 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[16][29]_P/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[16][2]_C/Q (HIGH)
-
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[16][2]_P/Q (HIGH)
-
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[16][30]_C/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[16][30]_P/Q (HIGH)
@@ -910,9 +898,13 @@ Table of Contents
 
  There are 23 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[16][8]_P/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[17][0]_C/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[16][9]_C/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[17][0]_P/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[16][9]_P/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[17][0]_C/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[17][0]_P/Q (HIGH)
 
  There are 21 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[17][10]_C/Q (HIGH)
 
@@ -954,9 +946,9 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[17][19]_P/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[17][1]_C/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[17][1]_C/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[17][1]_P/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[17][1]_P/Q (HIGH)
 
  There are 11 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[17][20]_C/Q (HIGH)
 
@@ -998,10 +990,6 @@ Table of Contents
 
  There are 2 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[17][29]_P/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[17][2]_C/Q (HIGH)
-
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[17][2]_P/Q (HIGH)
-
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[17][30]_C/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[17][30]_P/Q (HIGH)
@@ -1030,9 +1018,13 @@ Table of Contents
 
  There are 23 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[17][8]_P/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[18][0]_C/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[17][9]_C/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[18][0]_P/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[17][9]_P/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[18][0]_C/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[18][0]_P/Q (HIGH)
 
  There are 21 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[18][10]_C/Q (HIGH)
 
@@ -1074,9 +1066,9 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[18][19]_P/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[18][1]_C/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[18][1]_C/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[18][1]_P/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[18][1]_P/Q (HIGH)
 
  There are 11 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[18][20]_C/Q (HIGH)
 
@@ -1118,10 +1110,6 @@ Table of Contents
 
  There are 2 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[18][29]_P/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[18][2]_C/Q (HIGH)
-
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[18][2]_P/Q (HIGH)
-
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[18][30]_C/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[18][30]_P/Q (HIGH)
@@ -1150,9 +1138,13 @@ Table of Contents
 
  There are 23 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[18][8]_P/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[19][0]_C/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[18][9]_C/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[19][0]_P/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[18][9]_P/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[19][0]_C/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[19][0]_P/Q (HIGH)
 
  There are 21 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[19][10]_C/Q (HIGH)
 
@@ -1194,9 +1186,9 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[19][19]_P/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[19][1]_C/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[19][1]_C/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[19][1]_P/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[19][1]_P/Q (HIGH)
 
  There are 11 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[19][20]_C/Q (HIGH)
 
@@ -1238,10 +1230,6 @@ Table of Contents
 
  There are 2 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[19][29]_P/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[19][2]_C/Q (HIGH)
-
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[19][2]_P/Q (HIGH)
-
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[19][30]_C/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[19][30]_P/Q (HIGH)
@@ -1270,11 +1258,15 @@ Table of Contents
 
  There are 23 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[19][8]_P/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[1][0]_C/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[19][9]_C/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[1][0]_LDC/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[19][9]_P/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[1][0]_P/Q (HIGH)
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[1][0]_C/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[1][0]_LDC/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[1][0]_P/Q (HIGH)
 
  There are 21 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[1][10]_C/Q (HIGH)
 
@@ -1336,11 +1328,11 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[1][19]_P/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[1][1]_C/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[1][1]_C/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[1][1]_LDC/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[1][1]_LDC/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[1][1]_P/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[1][1]_P/Q (HIGH)
 
  There are 11 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[1][20]_C/Q (HIGH)
 
@@ -1402,11 +1394,11 @@ Table of Contents
 
  There are 2 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[1][29]_P/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[1][2]_C/Q (HIGH)
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[1][2]_C/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[1][2]_LDC/Q (HIGH)
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[1][2]_LDC/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[1][2]_P/Q (HIGH)
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[1][2]_P/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[1][30]_C/Q (HIGH)
 
@@ -1456,9 +1448,9 @@ Table of Contents
 
  There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[1][9]_P/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[20][0]_C/Q (HIGH)
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[20][0]_C/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[20][0]_P/Q (HIGH)
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[20][0]_P/Q (HIGH)
 
  There are 21 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[20][10]_C/Q (HIGH)
 
@@ -1500,9 +1492,9 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[20][19]_P/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[20][1]_C/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[20][1]_C/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[20][1]_P/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[20][1]_P/Q (HIGH)
 
  There are 11 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[20][20]_C/Q (HIGH)
 
@@ -1544,10 +1536,6 @@ Table of Contents
 
  There are 2 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[20][29]_P/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[20][2]_C/Q (HIGH)
-
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[20][2]_P/Q (HIGH)
-
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[20][30]_C/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[20][30]_P/Q (HIGH)
@@ -1576,9 +1564,13 @@ Table of Contents
 
  There are 23 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[20][8]_P/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[21][0]_C/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[20][9]_C/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[21][0]_P/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[20][9]_P/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[21][0]_C/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[21][0]_P/Q (HIGH)
 
  There are 21 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[21][10]_C/Q (HIGH)
 
@@ -1620,9 +1612,9 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[21][19]_P/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[21][1]_C/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[21][1]_C/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[21][1]_P/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[21][1]_P/Q (HIGH)
 
  There are 11 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[21][20]_C/Q (HIGH)
 
@@ -1664,10 +1656,6 @@ Table of Contents
 
  There are 2 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[21][29]_P/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[21][2]_C/Q (HIGH)
-
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[21][2]_P/Q (HIGH)
-
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[21][30]_C/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[21][30]_P/Q (HIGH)
@@ -1696,9 +1684,13 @@ Table of Contents
 
  There are 23 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[21][8]_P/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[22][0]_C/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[21][9]_C/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[22][0]_P/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[21][9]_P/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[22][0]_C/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[22][0]_P/Q (HIGH)
 
  There are 21 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[22][10]_C/Q (HIGH)
 
@@ -1740,9 +1732,9 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[22][19]_P/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[22][1]_C/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[22][1]_C/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[22][1]_P/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[22][1]_P/Q (HIGH)
 
  There are 11 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[22][20]_C/Q (HIGH)
 
@@ -1784,10 +1776,6 @@ Table of Contents
 
  There are 2 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[22][29]_P/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[22][2]_C/Q (HIGH)
-
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[22][2]_P/Q (HIGH)
-
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[22][30]_C/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[22][30]_P/Q (HIGH)
@@ -1816,9 +1804,13 @@ Table of Contents
 
  There are 23 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[22][8]_P/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[23][0]_C/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[22][9]_C/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[23][0]_P/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[22][9]_P/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[23][0]_C/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[23][0]_P/Q (HIGH)
 
  There are 21 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[23][10]_C/Q (HIGH)
 
@@ -1860,9 +1852,9 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[23][19]_P/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[23][1]_C/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[23][1]_C/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[23][1]_P/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[23][1]_P/Q (HIGH)
 
  There are 11 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[23][20]_C/Q (HIGH)
 
@@ -1904,10 +1896,6 @@ Table of Contents
 
  There are 2 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[23][29]_P/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[23][2]_C/Q (HIGH)
-
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[23][2]_P/Q (HIGH)
-
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[23][30]_C/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[23][30]_P/Q (HIGH)
@@ -1936,9 +1924,13 @@ Table of Contents
 
  There are 23 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[23][8]_P/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[24][0]_C/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[23][9]_C/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[24][0]_P/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[23][9]_P/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[24][0]_C/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[24][0]_P/Q (HIGH)
 
  There are 21 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[24][10]_C/Q (HIGH)
 
@@ -1980,9 +1972,9 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[24][19]_P/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[24][1]_C/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[24][1]_C/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[24][1]_P/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[24][1]_P/Q (HIGH)
 
  There are 11 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[24][20]_C/Q (HIGH)
 
@@ -2024,10 +2016,6 @@ Table of Contents
 
  There are 2 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[24][29]_P/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[24][2]_C/Q (HIGH)
-
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[24][2]_P/Q (HIGH)
-
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[24][30]_C/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[24][30]_P/Q (HIGH)
@@ -2056,9 +2044,13 @@ Table of Contents
 
  There are 23 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[24][8]_P/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[25][0]_C/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[24][9]_C/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[25][0]_P/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[24][9]_P/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[25][0]_C/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[25][0]_P/Q (HIGH)
 
  There are 21 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[25][10]_C/Q (HIGH)
 
@@ -2100,9 +2092,9 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[25][19]_P/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[25][1]_C/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[25][1]_C/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[25][1]_P/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[25][1]_P/Q (HIGH)
 
  There are 11 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[25][20]_C/Q (HIGH)
 
@@ -2144,10 +2136,6 @@ Table of Contents
 
  There are 2 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[25][29]_P/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[25][2]_C/Q (HIGH)
-
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[25][2]_P/Q (HIGH)
-
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[25][30]_C/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[25][30]_P/Q (HIGH)
@@ -2176,9 +2164,13 @@ Table of Contents
 
  There are 23 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[25][8]_P/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[26][0]_C/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[25][9]_C/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[26][0]_P/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[25][9]_P/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[26][0]_C/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[26][0]_P/Q (HIGH)
 
  There are 21 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[26][10]_C/Q (HIGH)
 
@@ -2220,9 +2212,9 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[26][19]_P/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[26][1]_C/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[26][1]_C/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[26][1]_P/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[26][1]_P/Q (HIGH)
 
  There are 11 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[26][20]_C/Q (HIGH)
 
@@ -2264,10 +2256,6 @@ Table of Contents
 
  There are 2 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[26][29]_P/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[26][2]_C/Q (HIGH)
-
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[26][2]_P/Q (HIGH)
-
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[26][30]_C/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[26][30]_P/Q (HIGH)
@@ -2296,9 +2284,13 @@ Table of Contents
 
  There are 23 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[26][8]_P/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[27][0]_C/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[26][9]_C/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[27][0]_P/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[26][9]_P/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[27][0]_C/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[27][0]_P/Q (HIGH)
 
  There are 21 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[27][10]_C/Q (HIGH)
 
@@ -2340,9 +2332,9 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[27][19]_P/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[27][1]_C/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[27][1]_C/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[27][1]_P/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[27][1]_P/Q (HIGH)
 
  There are 11 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[27][20]_C/Q (HIGH)
 
@@ -2384,10 +2376,6 @@ Table of Contents
 
  There are 2 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[27][29]_P/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[27][2]_C/Q (HIGH)
-
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[27][2]_P/Q (HIGH)
-
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[27][30]_C/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[27][30]_P/Q (HIGH)
@@ -2416,9 +2404,13 @@ Table of Contents
 
  There are 23 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[27][8]_P/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[28][0]_C/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[27][9]_C/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[28][0]_P/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[27][9]_P/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[28][0]_C/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[28][0]_P/Q (HIGH)
 
  There are 21 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[28][10]_C/Q (HIGH)
 
@@ -2460,9 +2452,9 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[28][19]_P/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[28][1]_C/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[28][1]_C/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[28][1]_P/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[28][1]_P/Q (HIGH)
 
  There are 11 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[28][20]_C/Q (HIGH)
 
@@ -2504,10 +2496,6 @@ Table of Contents
 
  There are 2 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[28][29]_P/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[28][2]_C/Q (HIGH)
-
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[28][2]_P/Q (HIGH)
-
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[28][30]_C/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[28][30]_P/Q (HIGH)
@@ -2536,9 +2524,13 @@ Table of Contents
 
  There are 23 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[28][8]_P/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[29][0]_C/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[28][9]_C/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[29][0]_P/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[28][9]_P/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[29][0]_C/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[29][0]_P/Q (HIGH)
 
  There are 21 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[29][10]_C/Q (HIGH)
 
@@ -2580,9 +2572,9 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[29][19]_P/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[29][1]_C/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[29][1]_C/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[29][1]_P/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[29][1]_P/Q (HIGH)
 
  There are 11 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[29][20]_C/Q (HIGH)
 
@@ -2624,10 +2616,6 @@ Table of Contents
 
  There are 2 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[29][29]_P/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[29][2]_C/Q (HIGH)
-
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[29][2]_P/Q (HIGH)
-
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[29][30]_C/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[29][30]_P/Q (HIGH)
@@ -2656,9 +2644,13 @@ Table of Contents
 
  There are 23 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[29][8]_P/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[2][0]_C/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[29][9]_C/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[2][0]_P/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[29][9]_P/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[2][0]_C/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[2][0]_P/Q (HIGH)
 
  There are 21 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[2][10]_C/Q (HIGH)
 
@@ -2700,9 +2692,9 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[2][19]_P/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[2][1]_C/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[2][1]_C/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[2][1]_P/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[2][1]_P/Q (HIGH)
 
  There are 11 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[2][20]_C/Q (HIGH)
 
@@ -2744,9 +2736,9 @@ Table of Contents
 
  There are 2 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[2][29]_P/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[2][2]_C/Q (HIGH)
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[2][2]_C/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[2][2]_P/Q (HIGH)
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[2][2]_P/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[2][30]_C/Q (HIGH)
 
@@ -2780,9 +2772,9 @@ Table of Contents
 
  There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[2][9]_P/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[30][0]_C/Q (HIGH)
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[30][0]_C/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[30][0]_P/Q (HIGH)
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[30][0]_P/Q (HIGH)
 
  There are 21 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[30][10]_C/Q (HIGH)
 
@@ -2824,9 +2816,9 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[30][19]_P/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[30][1]_C/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[30][1]_C/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[30][1]_P/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[30][1]_P/Q (HIGH)
 
  There are 11 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[30][20]_C/Q (HIGH)
 
@@ -2868,10 +2860,6 @@ Table of Contents
 
  There are 2 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[30][29]_P/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[30][2]_C/Q (HIGH)
-
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[30][2]_P/Q (HIGH)
-
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[30][30]_C/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[30][30]_P/Q (HIGH)
@@ -2900,9 +2888,13 @@ Table of Contents
 
  There are 23 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[30][8]_P/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[31][0]_C/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[30][9]_C/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[31][0]_P/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[30][9]_P/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[31][0]_C/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[31][0]_P/Q (HIGH)
 
  There are 21 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[31][10]_C/Q (HIGH)
 
@@ -2944,9 +2936,9 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[31][19]_P/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[31][1]_C/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[31][1]_C/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[31][1]_P/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[31][1]_P/Q (HIGH)
 
  There are 11 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[31][20]_C/Q (HIGH)
 
@@ -2988,10 +2980,6 @@ Table of Contents
 
  There are 2 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[31][29]_P/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[31][2]_C/Q (HIGH)
-
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[31][2]_P/Q (HIGH)
-
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[31][30]_C/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[31][30]_P/Q (HIGH)
@@ -3020,9 +3008,13 @@ Table of Contents
 
  There are 23 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[31][8]_P/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[3][0]_C/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[31][9]_C/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[3][0]_P/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[31][9]_P/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[3][0]_C/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[3][0]_P/Q (HIGH)
 
  There are 21 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[3][10]_C/Q (HIGH)
 
@@ -3064,9 +3056,9 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[3][19]_P/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[3][1]_C/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[3][1]_C/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[3][1]_P/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[3][1]_P/Q (HIGH)
 
  There are 11 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[3][20]_C/Q (HIGH)
 
@@ -3108,9 +3100,9 @@ Table of Contents
 
  There are 2 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[3][29]_P/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[3][2]_C/Q (HIGH)
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[3][2]_C/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[3][2]_P/Q (HIGH)
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[3][2]_P/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[3][30]_C/Q (HIGH)
 
@@ -3144,9 +3136,9 @@ Table of Contents
 
  There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[3][9]_P/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[4][0]_C/Q (HIGH)
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[4][0]_C/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[4][0]_P/Q (HIGH)
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[4][0]_P/Q (HIGH)
 
  There are 21 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[4][10]_C/Q (HIGH)
 
@@ -3188,9 +3180,9 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[4][19]_P/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[4][1]_C/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[4][1]_C/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[4][1]_P/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[4][1]_P/Q (HIGH)
 
  There are 11 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[4][20]_C/Q (HIGH)
 
@@ -3232,9 +3224,9 @@ Table of Contents
 
  There are 2 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[4][29]_P/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[4][2]_C/Q (HIGH)
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[4][2]_C/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[4][2]_P/Q (HIGH)
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[4][2]_P/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[4][30]_C/Q (HIGH)
 
@@ -3268,9 +3260,9 @@ Table of Contents
 
  There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[4][9]_P/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[5][0]_C/Q (HIGH)
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[5][0]_C/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[5][0]_P/Q (HIGH)
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[5][0]_P/Q (HIGH)
 
  There are 21 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[5][10]_C/Q (HIGH)
 
@@ -3312,9 +3304,9 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[5][19]_P/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[5][1]_C/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[5][1]_C/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[5][1]_P/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[5][1]_P/Q (HIGH)
 
  There are 11 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[5][20]_C/Q (HIGH)
 
@@ -3356,9 +3348,9 @@ Table of Contents
 
  There are 2 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[5][29]_P/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[5][2]_C/Q (HIGH)
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[5][2]_C/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[5][2]_P/Q (HIGH)
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[5][2]_P/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[5][30]_C/Q (HIGH)
 
@@ -3392,9 +3384,9 @@ Table of Contents
 
  There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[5][9]_P/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[6][0]_C/Q (HIGH)
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[6][0]_C/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[6][0]_P/Q (HIGH)
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[6][0]_P/Q (HIGH)
 
  There are 21 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[6][10]_C/Q (HIGH)
 
@@ -3436,9 +3428,9 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[6][19]_P/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[6][1]_C/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[6][1]_C/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[6][1]_P/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[6][1]_P/Q (HIGH)
 
  There are 11 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[6][20]_C/Q (HIGH)
 
@@ -3480,9 +3472,9 @@ Table of Contents
 
  There are 2 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[6][29]_P/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[6][2]_C/Q (HIGH)
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[6][2]_C/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[6][2]_P/Q (HIGH)
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[6][2]_P/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[6][30]_C/Q (HIGH)
 
@@ -3516,9 +3508,9 @@ Table of Contents
 
  There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[6][9]_P/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[7][0]_C/Q (HIGH)
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[7][0]_C/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[7][0]_P/Q (HIGH)
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[7][0]_P/Q (HIGH)
 
  There are 21 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[7][10]_C/Q (HIGH)
 
@@ -3560,9 +3552,9 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[7][19]_P/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[7][1]_C/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[7][1]_C/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[7][1]_P/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[7][1]_P/Q (HIGH)
 
  There are 11 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[7][20]_C/Q (HIGH)
 
@@ -3604,9 +3596,9 @@ Table of Contents
 
  There are 2 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[7][29]_P/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[7][2]_C/Q (HIGH)
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[7][2]_C/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[7][2]_P/Q (HIGH)
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[7][2]_P/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[7][30]_C/Q (HIGH)
 
@@ -3640,9 +3632,9 @@ Table of Contents
 
  There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[7][9]_P/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[8][0]_C/Q (HIGH)
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[8][0]_C/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[8][0]_P/Q (HIGH)
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[8][0]_P/Q (HIGH)
 
  There are 21 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[8][10]_C/Q (HIGH)
 
@@ -3684,9 +3676,9 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[8][19]_P/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[8][1]_C/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[8][1]_C/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[8][1]_P/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[8][1]_P/Q (HIGH)
 
  There are 11 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[8][20]_C/Q (HIGH)
 
@@ -3728,10 +3720,6 @@ Table of Contents
 
  There are 2 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[8][29]_P/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[8][2]_C/Q (HIGH)
-
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[8][2]_P/Q (HIGH)
-
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[8][30]_C/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[8][30]_P/Q (HIGH)
@@ -3760,9 +3748,13 @@ Table of Contents
 
  There are 23 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[8][8]_P/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[9][0]_C/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[8][9]_C/Q (HIGH)
 
- There are 31 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[9][0]_P/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[8][9]_P/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[9][0]_C/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[9][0]_P/Q (HIGH)
 
  There are 21 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[9][10]_C/Q (HIGH)
 
@@ -3804,9 +3796,9 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[9][19]_P/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[9][1]_C/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[9][1]_C/Q (HIGH)
 
- There are 30 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[9][1]_P/Q (HIGH)
+ There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[9][1]_P/Q (HIGH)
 
  There are 11 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[9][20]_C/Q (HIGH)
 
@@ -3848,10 +3840,6 @@ Table of Contents
 
  There are 2 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[9][29]_P/Q (HIGH)
 
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[9][2]_C/Q (HIGH)
-
- There are 29 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[9][2]_P/Q (HIGH)
-
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[9][30]_C/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: rgf/Registers_reg[9][30]_P/Q (HIGH)
@@ -3880,9 +3868,65 @@ Table of Contents
 
  There are 23 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[9][8]_P/Q (HIGH)
 
- There are 23 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[9][9]_C/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[9][9]_C/Q (HIGH)
 
- There are 23 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[9][9]_P/Q (HIGH)
+ There are 22 register/latch pins with no clock driven by root clock pin: rgf/Registers_reg[9][9]_P/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: testt/data_reg[0]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: testt/data_reg[13]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: testt/data_reg[14]/Q (HIGH)
+
+ There are 31 register/latch pins with no clock driven by root clock pin: testt/data_reg[15]/Q (HIGH)
+
+ There are 31 register/latch pins with no clock driven by root clock pin: testt/data_reg[16]/Q (HIGH)
+
+ There are 31 register/latch pins with no clock driven by root clock pin: testt/data_reg[17]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: testt/data_reg[1]/Q (HIGH)
+
+ There are 7 register/latch pins with no clock driven by root clock pin: testt/data_reg[20]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: testt/data_reg[20]_rep/Q (HIGH)
+
+ There are 31 register/latch pins with no clock driven by root clock pin: testt/data_reg[20]_rep__0/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: testt/data_reg[20]_rep__1/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: testt/data_reg[20]_rep__2/Q (HIGH)
+
+ There are 7 register/latch pins with no clock driven by root clock pin: testt/data_reg[21]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: testt/data_reg[21]_rep/Q (HIGH)
+
+ There are 31 register/latch pins with no clock driven by root clock pin: testt/data_reg[21]_rep__0/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: testt/data_reg[22]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: testt/data_reg[23]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: testt/data_reg[24]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: testt/data_reg[25]/Q (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: testt/data_reg[29]/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: testt/data_reg[30]/Q (HIGH)
+
+ There are 21 register/latch pins with no clock driven by root clock pin: testt/data_reg[31]/Q (HIGH)
+
+ There are 34 register/latch pins with no clock driven by root clock pin: testt/data_reg[4]/Q (HIGH)
+
+ There are 34 register/latch pins with no clock driven by root clock pin: testt/data_reg[5]/Q (HIGH)
+
+ There are 34 register/latch pins with no clock driven by root clock pin: testt/data_reg[6]/Q (HIGH)
+
+ There are 31 register/latch pins with no clock driven by root clock pin: testt/data_reg[7]/Q (HIGH)
+
+ There are 31 register/latch pins with no clock driven by root clock pin: testt/data_reg[8]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: testt/data_reg[9]/Q (HIGH)
 
 
 2. checking constant_clock
@@ -3897,7 +3941,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 6088 pins that are not constrained for maximum delay. (HIGH)
+ There are 6116 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 

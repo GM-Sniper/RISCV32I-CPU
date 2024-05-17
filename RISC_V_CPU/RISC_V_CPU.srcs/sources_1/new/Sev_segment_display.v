@@ -11,22 +11,9 @@
 ************************/
 
 
-module Sev_segment_display( input [1:0] sel, input [3:0] units,
-    input [3:0] tens,
-    input [3:0] hundreds,
-    input [3:0] thousands,
-
+module Sev_segment_display( input [1:0] sel, input [3:0] num,
 output reg [3:0] active_anode,output reg [6:0] seg);
 
-reg [3:0] num;
-always @(sel) begin
-        case(sel)
-            2'b00: num=units;
-            2'b01: num=tens;
-            2'b10: num=hundreds;
-            2'b11: num=thousands;
-    endcase
-end
 always@(sel)begin
     case(sel)
     0:active_anode=4'b1110;
