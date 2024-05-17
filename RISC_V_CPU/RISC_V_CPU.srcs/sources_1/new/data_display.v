@@ -21,15 +21,13 @@
 
 
 module data_display(
-    input clk,
-    input rst,
     input [31:0] data,
     output [3:0] units,
     output [3:0] tens,
     output [3:0] hundreds,
     output [3:0] thousands
     );
-assign unts=data%10;
+assign units=data%10;
 assign tens=(data%100)/10;
 assign hundreds=(data%1000)/100;
 assign thousands=(data%10000)/1000;

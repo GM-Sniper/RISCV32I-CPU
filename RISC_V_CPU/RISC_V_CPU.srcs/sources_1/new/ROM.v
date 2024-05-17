@@ -12,29 +12,24 @@ parameter depth = 4096,
 parameter filename = "assembly.txt",
 parameter address_width = $clog2(depth))
 (
-input wire clk,
+input wire  clk,
 input wire [address_width-1:0] address,
-output reg [31:0] data
-); 
+output reg  [31:0] data
+);  
 reg [width-1:0] memory [0:depth-1];
+
 
 initial begin
     if (filename != 0) begin
         $readmemb("C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/assembly.txt", memory);
-        $display("Value of 1-8 bits", memory[address]);
-        $display("Value of 1-8 bits", memory[address+1]);
-        $display("Value of 1-8 bits", memory[address+2]);
-        $display("Value of 1-8 bits", memory[address+3]);
-        $display("sfnsm,dnfkmsdn,mfnmdsnfwkdbc ", {memory[address+3],memory[address+2],memory[address+1],memory[address]});
-        data={memory[address+3],memory[address+2],memory[address+1],memory[address]};
-        $display("jfhdksjdlkf  ", data);
-    end
+    end   
 end
 
-//assign data2=memory[address];
-//always @(*) begin 
-////    data<={memory[address+3],memory[address+2],memory[address+1],memory[address]};
-////   data<=32'b00000000011100000000000110010011;
-        
-//end
+always @(memory) begin 
+data[7:0]=memory[address];
+data[15:8]=memory[address+1];
+data[23:16]=memory[address+2];
+data[31:24]=memory[address+3];  
+
+end
 endmodule

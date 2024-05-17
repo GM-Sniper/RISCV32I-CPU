@@ -18,6 +18,7 @@ proc create_report { reportName command } {
   }
 }
 set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -31,13 +32,13 @@ set_property ip_output_repo {c:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
   {C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/ALU.v}
-  {C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/Adder.v}
   {C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/Branch_Control.v}
   {C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/ImmGen.v}
   {C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/ROM.v}
   {C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/Sev_segment_display.v}
   {C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/clk_div.v}
   {C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/control_Unit.v}
+  {C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/data_display.v}
   {C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/registerFile.v}
   {C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/shifter.v}
   {C:/Users/Omar Ganna/AUC/Digital 1/RISCV32I-CPU/RISC_V_CPU/RISC_V_CPU.srcs/sources_1/new/CPU.v}

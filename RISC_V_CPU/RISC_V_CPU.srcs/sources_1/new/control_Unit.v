@@ -23,12 +23,10 @@ module ControlUnit (
     output reg  ALUSrc,
     output reg LUI,
     output reg AUIPC,
-    output [6:0] detect, // 7-bit output anodes
-    output [3:0] anode
+    output  reg test// 7-bit output anodes
     );
-reg test;
 initial begin
-$display("Value of opcode ", opcode);
+test=0;
 end
 always @(*) begin
     case(opcode[6:2])   
@@ -145,6 +143,4 @@ always @(*) begin
         end
 endcase
 end
-assign detect=test ? 7'b0110000 : 7'b1111111; 
-assign anode=4'b0111;
 endmodule

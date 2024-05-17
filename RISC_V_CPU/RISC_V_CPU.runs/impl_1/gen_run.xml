@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1715886172">
-  <File Type="OPT-HWDEF" Name="CPU.hwdef"/>
-  <File Type="ROUTE-BUS-SKEW" Name="CPU_bus_skew_routed.rpt"/>
-  <File Type="PA-DCP" Name="CPU.dcp"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1715924708">
   <File Type="BITSTR-BMM" Name="CPU_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="CPU_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="CPU_timing_summary_init.rpt"/>
@@ -13,6 +10,7 @@
   <File Type="ROUTE-PWR-SUM" Name="CPU_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="CPU_reports.tcl"/>
   <File Type="OPT-DRC" Name="CPU_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="CPU.hwdef"/>
   <File Type="PWROPT-DCP" Name="CPU_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="CPU_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="CPU_timing_summary_pwropted.rpt"/>
@@ -24,6 +22,7 @@
   <File Type="PLACE-CTRL" Name="CPU_control_sets_placed.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="CPU_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="CPU_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="CPU.bgn"/>
   <File Type="PLACE-TIMING" Name="CPU_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="CPU_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="CPU.bin"/>
@@ -53,6 +52,7 @@
   <File Type="ROUTE-TIMING-RPX" Name="CPU_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="CPU_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="CPU_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="CPU_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="CPU_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="CPU_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="CPU_postroute_physopt.dcp"/>
@@ -66,20 +66,12 @@
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="CPU_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="CPU.rbt"/>
   <File Type="BITSTR-NKY" Name="CPU.nky"/>
-  <File Type="BG-BGN" Name="CPU.bgn"/>
   <File Type="BG-DRC" Name="CPU.drc"/>
   <File Type="RDI-RDI" Name="CPU.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/ALU.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/Adder.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -128,6 +120,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/data_display.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/registerFile.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -149,7 +148,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/tocounter.v">
+    <File Path="$PSRCDIR/sources_1/new/Adder.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -165,7 +164,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/todata.v">
+    <File Path="$PSRCDIR/sources_1/new/tocounter.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -173,7 +172,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/data_display.v">
+    <File Path="$PSRCDIR/sources_1/new/todata.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -195,6 +194,7 @@
       </FileInfo>
     </File>
     <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/CPU.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>

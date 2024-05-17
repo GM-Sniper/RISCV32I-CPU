@@ -25,8 +25,10 @@ reg clk;
 reg rst;
 wire [6:0] segments;
 wire [3:0] anodes;
+wire [31:0] data;
+wire [11:0] programCounter;
 
-CPU cp(.clk(clk),.rst(rst),.segments(segments),.anode(anodes));
+CPU cp(.clk(clk),.rst(rst),.segments(segments),.anode(anodes),.data(data),.programCounter(programCounter));
 initial begin
 clk=0;
 forever #25 clk=~clk;
