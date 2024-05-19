@@ -29,20 +29,26 @@ localparam BGEU = 3'b111;
 
 always @ (*) begin
     // Check if branching is required based on B_control and flags
+//    if(Branch==0)BranchTaken=0;
+//    else if(B_control==BEQ)BranchTaken=Zflag;
+//    else
+//    BranchTaken=0;
+     
+//    end
     case (B_control)
         BEQ: 
-            BranchTaken = Branch && Zflag;
+            BranchTaken = Branch & Zflag;
         
         BNE: 
-            BranchTaken = Branch && !Zflag;
+            BranchTaken = Branch & !Zflag;
         BLT: 
-            BranchTaken = Branch && (Nflag != Oflag);
+            BranchTaken = Branch & (Nflag != Oflag);
         BGE:                                                                                    
-            BranchTaken = Branch && (Nflag==Oflag);
+            BranchTaken = Branch & (Nflag==Oflag);
         BLTU: 
-            BranchTaken = Branch && !Cflag;
+            BranchTaken = Branch & !Cflag;
         BGEU: 
-            BranchTaken = Branch && (Cflag);
+            BranchTaken = Branch & (Cflag);
         default: 
             BranchTaken = 0;
     endcase

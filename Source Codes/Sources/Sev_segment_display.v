@@ -11,7 +11,25 @@
 ************************/
 
 
-module Sev_segment_display( input [1:0] sel, input[3:0] num,output reg [3:0] active_anode,output reg [6:0] seg);
+module Sev_segment_display(input clk,input rst, input [3:0] units,tens,hundreds,thousands,
+output reg [3:0] active_anode,output reg [6:0] seg);
+
+reg [3:0]num;
+reg[1:0] sel;
+
+always @(posedge clk,posedge rst) begin////////e/rthg/brhrg/hrtg/h
+       if(rst) sel<=2'b00;
+       else if(sel==3) sel<=0;
+       else sel<=sel+1;
+end
+always @(sel) begin
+        case(sel)
+            2'b00: num<=units;
+            2'b01: num<=tens;
+            2'b10: num<=hundreds;
+            2'b11: num<=thousands;
+    endcase
+end
 
 always@(sel)begin
     case(sel)
@@ -34,10 +52,7 @@ case(num)
     7 : seg = 7'b0001111;
     8 : seg = 7'b0000000;
     9 : seg = 7'b0000100;
-    
-    default : seg = 7'b1111111; 
-
+    default : seg = 7'b0110000; 
 endcase
 end
-
 endmodule

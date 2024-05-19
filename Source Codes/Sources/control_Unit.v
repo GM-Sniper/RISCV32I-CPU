@@ -13,7 +13,7 @@
 
 module ControlUnit (
     input [6:0] opcode,
-    output reg [3:0] ALUControl,
+//    output reg [3:0] ALUControl,
     output reg RegWrite,//
     output reg MemtoReg,//
     output reg MemWrite,//
@@ -22,64 +22,69 @@ module ControlUnit (
     output reg [1:0] Jump,//
     output reg  ALUSrc,
     output reg LUI,
+    output reg ALUop,
     output reg AUIPC,
-    output [6:0] detect, // 7-bit output anodes
-    output [3:0] anode
+    output  reg test// 7-bit output anodes
     );
-wire test=1'b0;
+initial begin
+test=0;
+end
 always @(*) begin
     case(opcode[6:2])   
         5'b01100: begin //R-type
-            // ALUControl = 4'b0111;
-            RegWrite <= 1;
-            MemtoReg <= 0;
-            MemWrite <= 0;
-            MemRead <= 0;
+//             ALUControl = 4'b0111;
+            RegWrite = 1;
+            MemtoReg = 0;
+            MemWrite = 0;
+            MemRead = 0;
             Branch <= 0;
             Jump <= 2'b00;
             ALUSrc <= 0;
-            LUI <= 0;
+            ALUop <=1;
+            LUI <= 0;   
             AUIPC <= 0;
         end
-        5'b00100: begin //I-type
-            // ALUControl = 4'b0111;
-            RegWrite <= 1;
-            MemtoReg <= 0;
-            MemWrite <= 0;
-            MemRead <= 0;
+        5'b00100: begin//I-type
+//             ALUControl = 4'b0111;
+            RegWrite = 1;
+            MemtoReg = 0;
+            MemWrite = 0;
+            MemRead = 0;
             Branch <= 0;
             Jump <= 2'b00;
             ALUSrc <= 1;
+            ALUop <=1;
             LUI <= 0;
             AUIPC <= 0;
         end
         5'b11000: begin //SB-type
-            // ALUControl = 4'b0111;
-            RegWrite <= 1;
-            MemtoReg <= 0;
-            MemWrite <= 0;
-            MemRead <= 0;
+//             ALUControl = 4'b0111;
+            RegWrite = 1;
+            MemtoReg = 0;
+            MemWrite = 0;
+            MemRead = 0;
             Branch <= 1;
-            Jump <= 2'b00;
-            ALUSrc <= 1;
+            Jump <= 2'b00; 
+            ALUSrc <= 0;
+            ALUop <=0;
             LUI <= 0;
             AUIPC <= 0;
         end
         5'b00000: begin //U-type
-            // ALUControl = 4'b0111;
-            RegWrite <= 1;
-            MemtoReg <= 0;
-            MemWrite <= 0;
-            MemRead <= 0;
+//             ALUControl = 4'b0111;
+            RegWrite = 1;
+            MemtoReg = 1;
+            MemWrite = 0;
+            MemRead = 1;
             Branch <= 0;
-            Jump <= 2'b00;
+            Jump = 2'b00;
             ALUSrc <= 1;
-            RegDst <= 2'b10;
-            LUI <= 1;
+            LUI <= 0;
             AUIPC <= 0;
+            ALUop <=0;
         end
         5'b01000: begin //S-type
-            // ALUControl = 4'b0000;
+//             ALUControl = 4'b0000;
             RegWrite <= 1;
             MemtoReg <= 0;
             MemWrite <= 1;
@@ -89,9 +94,10 @@ always @(*) begin
             ALUSrc <= 1;
             LUI <= 0;
             AUIPC <= 0;
+            ALUop <=0;
         end
-        5'b01101: begin 
-            // ALUControl = 4'b0111;
+        5'b01101: begin //LUI
+//             ALUControl = 4'b0111;
             RegWrite <= 1;
             MemtoReg <= 0;
             MemWrite <= 0;
@@ -101,9 +107,10 @@ always @(*) begin
             ALUSrc <= 1;
             LUI <= 1;
             AUIPC <= 0;
+            ALUop <=0;
         end
-        5'b00101: begin 
-            // ALUCon<trol = 4'b0111;
+        5'b00101: begin //AUIPC
+//             ALUControl = 4'b0111;
             RegWrite <= 1;
             MemtoReg <= 0;
             MemWrite <= 0;
@@ -113,9 +120,10 @@ always @(*) begin
             ALUSrc <= 1;
             LUI <= 0;
             AUIPC <= 1;
+            ALUop <=0;
         end
-        5'b11011: begin 
-            // ALUControl = 4'b0111;
+        5'b11011: begin //Jal
+//             ALUControl = 4'b0111;
             RegWrite <= 1;
             MemtoReg <= 0;
             MemWrite <= 0;
@@ -125,9 +133,10 @@ always @(*) begin
             ALUSrc <= 1;
             LUI <= 0;
             AUIPC <= 0;
+            ALUop <=0;
         end
-        5'b11001: begin 
-            // ALUControl = 4'b0111;
+        5'b11001: begin //jalr
+//             ALUControl = 4'b0111;
             RegWrite <= 1;
             MemtoReg <= 0;
             MemWrite <= 0;
@@ -137,11 +146,11 @@ always @(*) begin
             ALUSrc <= 1;
             LUI <= 0;
             AUIPC <= 0;
+             ALUop <=0;
         end
         default: begin
-            test<=1;
+            test=1;
         end
 endcase
-assign detect=(test) ? 7'b0110000 : 7'b1111111; 
 end
 endmodule
