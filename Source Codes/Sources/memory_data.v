@@ -15,7 +15,7 @@
 
 
 module memory_data # (parameter WIDTH=8, 
-    parameter DEPTH=4096, 
+    parameter DEPTH=256, 
     parameter INIT_F="C:/Users/Omar Ganna/project_2/memory1.txt",
     parameter ADDRW=$clog2(DEPTH))
     (

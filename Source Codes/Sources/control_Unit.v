@@ -4,27 +4,25 @@
 * Module: Controlunit.v
 * Project: RISCV_CPU
 * Author: Omar Ahmed Ganna, omarganna@aucegypt.edu
-* Description: This module is the control unit of the RISCV CPU
+* Description: This module is the control unit of the RISCV CPU and determine the flow of the instruction and the control signals.
 *
-* Change history: 12/05/24
-
+* Change history: 12/05/24: Created the Program data
 ************************/
 
 
 module ControlUnit (
     input [6:0] opcode,
-//    output reg [3:0] ALUControl,
-    output reg RegWrite,//
-    output reg MemtoReg,//
-    output reg MemWrite,//
-    output reg MemRead,//
-    output reg Branch,//
-    output reg [1:0] Jump,//
+    output reg RegWrite,
+    output reg MemtoReg,
+    output reg MemWrite,
+    output reg MemRead,
+    output reg Branch,
+    output reg [1:0] Jump,
     output reg  ALUSrc,
     output reg LUI,
     output reg ALUop,
     output reg AUIPC,
-    output  reg test// 7-bit output anodes
+    output  reg test// returns 1 if the opcode is not found
     );
 initial begin
 test=0;
@@ -32,7 +30,6 @@ end
 always @(*) begin
     case(opcode[6:2])   
         5'b01100: begin //R-type
-//             ALUControl = 4'b0111;
             RegWrite = 1;
             MemtoReg = 0;
             MemWrite = 0;
@@ -45,7 +42,6 @@ always @(*) begin
             AUIPC <= 0;
         end
         5'b00100: begin//I-type
-//             ALUControl = 4'b0111;
             RegWrite = 1;
             MemtoReg = 0;
             MemWrite = 0;
@@ -58,7 +54,6 @@ always @(*) begin
             AUIPC <= 0;
         end
         5'b11000: begin //SB-type
-//             ALUControl = 4'b0111;
             RegWrite = 1;
             MemtoReg = 0;
             MemWrite = 0;
@@ -71,7 +66,6 @@ always @(*) begin
             AUIPC <= 0;
         end
         5'b00000: begin //U-type
-//             ALUControl = 4'b0111;
             RegWrite = 1;
             MemtoReg = 1;
             MemWrite = 0;
@@ -84,7 +78,6 @@ always @(*) begin
             ALUop <=0;
         end
         5'b01000: begin //S-type
-//             ALUControl = 4'b0000;
             RegWrite <= 1;
             MemtoReg <= 0;
             MemWrite <= 1;
@@ -97,7 +90,6 @@ always @(*) begin
             ALUop <=0;
         end
         5'b01101: begin //LUI
-//             ALUControl = 4'b0111;
             RegWrite <= 1;
             MemtoReg <= 0;
             MemWrite <= 0;
@@ -110,7 +102,6 @@ always @(*) begin
             ALUop <=0;
         end
         5'b00101: begin //AUIPC
-//             ALUControl = 4'b0111;
             RegWrite <= 1;
             MemtoReg <= 0;
             MemWrite <= 0;
@@ -123,7 +114,6 @@ always @(*) begin
             ALUop <=0;
         end
         5'b11011: begin //Jal
-//             ALUControl = 4'b0111;
             RegWrite <= 1;
             MemtoReg <= 0;
             MemWrite <= 0;
@@ -136,7 +126,6 @@ always @(*) begin
             ALUop <=0;
         end
         5'b11001: begin //jalr
-//             ALUControl = 4'b0111;
             RegWrite <= 1;
             MemtoReg <= 0;
             MemWrite <= 0;

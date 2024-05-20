@@ -1,22 +1,10 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 05/15/2024 07:36:21 PM
-// Design Name: 
-// Module Name: clk_div
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+//* Module: clk_div.v
+//* Project: RISCV_CPU
+//* Author: Omar Ahmed Ganna
+//* Description: This module is used to divide the clock frequency to a certain value
+//* Change history: 12/05/24:  Created the Program data
 //////////////////////////////////////////////////////////////////////////////////
 
 

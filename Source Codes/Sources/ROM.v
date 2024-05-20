@@ -21,12 +21,12 @@ reg [width-1:0] memory [0:depth-1];
 
 initial begin
     if (filename != 0) begin
-        $readmemb("C:/Users/Omar Ganna/project_2/assembly4.txt", memory);
+        $readmemb("C:/Users/Omar Ganna/project_2/assembly2.txt", memory);
         $display("diofskldfusfpd   ", memory[0]);
     end   
 end
 
-always @(posedge clk ) begin 
+always @(posedge clk ) begin
     data[7:0]<=memory[address];
     data[15:8]<=memory[address+1];
     data[23:16]<=memory[address+2];
